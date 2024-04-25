@@ -2,6 +2,7 @@ package hello.login.web.login;
 
 import hello.login.domain.login.LoginService;
 import hello.login.domain.member.Member;
+import hello.login.web.SessionConst;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.web.servlet.server.Session;
@@ -13,14 +14,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 @Slf4j
 @RequiredArgsConstructor
 @Controller
 public class LoginController {
     private final LoginService loginService;
-    private final HttpServletResponse httpServletResponse;
 
     @GetMapping("/login")
     public String loginForm(Model model) {
@@ -28,8 +30,8 @@ public class LoginController {
         return "login/loginForm";
     }
 
-    @PostMapping("/login")
-    public String login(@Validated LoginForm form, BindingResult bindingResult, HttpServletResponse response) {
+    /*@PostMapping("/login")*/
+    public String loginV1(@Validated LoginForm form, BindingResult bindingResult, HttpServletResponse response) {
         if (bindingResult.hasErrors()) {
             log.info("LogIn form error: {}", bindingResult);
         }
@@ -43,6 +45,33 @@ public class LoginController {
         Cookie idCookie = new Cookie("memberId", String.valueOf(member.getId()));
         response.addCookie(idCookie);
         log.info("Login Success");
+        return "redirect:/";
+    }
+
+    @PostMapping("/login")
+    public String loginV2(@Validated LoginForm form, BindingResult bindingResult, HttpServletRequest request) {
+        if (bindingResult.hasErrors()) {
+            log.info("LogIn form error: {}", bindingResult);
+        }
+        Member member = loginService.login(form.getLoginId(), form.getPassword());
+        if (member == null) {
+            bindingResult.reject("loginFail", "Invalid loginId or password");
+            return "login/loginForm";
+        }
+        //로그인 성공 처리
+        //세션이 있으면 있는 세션을 반환, 없으면 신규 세션을 생성
+        HttpSession session = request.getSession(); // Default = true
+        session.setAttribute(SessionConst.LOGIN_MEMBER, member);
+        log.info("Login Success");
+        return "redirect:/";
+    }
+
+    @PostMapping("/logout")
+    public String logoutV2(HttpServletRequest request) {
+        HttpSession session = request.getSession(false);
+        if (session != null) {
+            session.invalidate();
+        }
         return "redirect:/";
     }
 }
