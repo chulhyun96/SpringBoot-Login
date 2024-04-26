@@ -1,0 +1,26 @@
+<configuration debug="true">
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+
+    <property name="logPath" value="./src/main/resources/log"/>
+
+    <appender name="FILE-ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${logPath}/application.log</file>
+
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <Pattern>
+                %d{yyyy-MM-dd HH:mm:ss.SSS} %magenta([%thread]) %msg%n
+            </Pattern>
+        </encoder>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${logPath}/archived/application-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <maxHistory>20</maxHistory>
+            <totalSizeCap>30MB</totalSizeCap>
+            <maxFileSize>10MB</maxFileSize>
+        </rollingPolicy>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="FILE-ROLLING" />
+    </root>
+</configuration>
