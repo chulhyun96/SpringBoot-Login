@@ -5,13 +5,13 @@ import hello.login.domain.member.Member;
 import hello.login.web.SessionConst;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.boot.web.servlet.server.Session;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -49,7 +49,9 @@ public class LoginController {
     }
 
     @PostMapping("/login")
-    public String loginV2(@Validated LoginForm form, BindingResult bindingResult, HttpServletRequest request) {
+    public String loginV2(@Validated LoginForm form, BindingResult bindingResult,
+                          @RequestParam(defaultValue = "/") String redirectURL,
+                          HttpServletRequest request) {
         if (bindingResult.hasErrors()) {
             log.info("LogIn form error: {}", bindingResult);
         }
@@ -63,7 +65,7 @@ public class LoginController {
         HttpSession session = request.getSession(); // Default = true
         session.setAttribute(SessionConst.LOGIN_MEMBER, member);
         log.info("Login Success");
-        return "redirect:/";
+        return "redirect:" + redirectURL;
     }
 
     @PostMapping("/logout")

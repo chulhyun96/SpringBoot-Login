@@ -3,7 +3,7 @@
 
     <property name="logPath" value="./src/main/resources/log"/>
 
-    <appender name="FILE-ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${logPath}/application.log</file>
 
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
@@ -14,13 +14,18 @@
 
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
             <fileNamePattern>${logPath}/archived/application-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
-            <maxHistory>20</maxHistory>
+            <maxHistory>2</maxHistory>
             <totalSizeCap>30MB</totalSizeCap>
             <maxFileSize>10MB</maxFileSize>
         </rollingPolicy>
     </appender>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
 
-    <root level="INFO">
-        <appender-ref ref="FILE-ROLLING" />
+    <root level="info">
+        <appender-ref ref="STDOUT"/>
     </root>
 </configuration>

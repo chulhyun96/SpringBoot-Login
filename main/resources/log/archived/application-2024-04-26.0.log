@@ -1,0 +1,329 @@
+2024-04-26 09:52:23.462 [35m[main][0;39m [34mINFO [0;39m hello.login.ItemServiceApplication.logStarting - Starting ItemServiceApplication using Java 15.0.10 on cheolhyeon-ui-MacBookAir.local with PID 8465 (/Users/cheolhyeon/Desktop/Login-Start/build/classes/java/main started by cheolhyeon in /Users/cheolhyeon/Desktop/Login-Start)
+2024-04-26 09:52:23.468 [35m[main][0;39m [34mINFO [0;39m hello.login.ItemServiceApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2024-04-26 09:52:24.286 [35m[main][0;39m [34mINFO [0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+2024-04-26 09:52:24.293 [35m[main][0;39m [34mINFO [0;39m org.apache.catalina.core.StandardService.log - Starting service [Tomcat]
+2024-04-26 09:52:24.293 [35m[main][0;39m [34mINFO [0;39m org.apache.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2024-04-26 09:52:24.331 [35m[main][0;39m [34mINFO [0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+2024-04-26 09:52:24.331 [35m[main][0;39m [34mINFO [0;39m org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 826 ms
+2024-04-26 09:52:24.358 [35m[main][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.init - LogFilter init
+2024-04-26 09:52:24.365 [35m[main][0;39m [34mINFO [0;39m hello.login.domain.member.MemberRepository.save - save : member = Member(id=1, loginId=memberA, name=memberA, password=memberA)
+2024-04-26 09:52:24.433 [35m[main][0;39m [34mINFO [0;39m org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2024-04-26 09:52:24.551 [35m[main][0;39m [34mINFO [0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-26 09:52:24.558 [35m[main][0;39m [34mINFO [0;39m hello.login.ItemServiceApplication.logStarted - Started ItemServiceApplication in 1.314 seconds (JVM running for 1.816)
+2024-04-26 09:53:27.217 [35m[http-nio-8080-exec-1][0;39m [34mINFO [0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-26 09:53:27.218 [35m[http-nio-8080-exec-1][0;39m [34mINFO [0;39m org.springframework.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+2024-04-26 09:53:27.219 [35m[http-nio-8080-exec-1][0;39m [34mINFO [0;39m org.springframework.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 1 ms
+2024-04-26 09:53:27.224 [35m[http-nio-8080-exec-1][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - REQUEST: [/login], USERID [null]
+2024-04-26 09:53:27.424 [35m[http-nio-8080-exec-1][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - RESPONSE: [/login], USERID [null]
+2024-04-26 09:53:27.496 [35m[http-nio-8080-exec-2][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - REQUEST: [/css/bootstrap.min.css], USERID [null]
+2024-04-26 09:53:27.527 [35m[http-nio-8080-exec-3][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - REQUEST: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-26 09:53:27.531 [35m[http-nio-8080-exec-3][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - RESPONSE: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-26 09:53:27.548 [35m[http-nio-8080-exec-2][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - RESPONSE: [/css/bootstrap.min.css], USERID [null]
+2024-04-26 09:53:27.698 [35m[http-nio-8080-exec-4][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - REQUEST: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-26 09:53:27.699 [35m[http-nio-8080-exec-4][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - RESPONSE: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-26 09:53:31.747 [35m[http-nio-8080-exec-5][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - REQUEST: [/login], USERID [null]
+2024-04-26 09:53:31.827 [35m[http-nio-8080-exec-5][0;39m [34mINFO [0;39m hello.login.web.login.LoginController.loginV2 - Login Success
+2024-04-26 09:53:31.829 [35m[http-nio-8080-exec-5][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - RESPONSE: [/login], USERID [null]
+2024-04-26 09:53:31.835 [35m[http-nio-8080-exec-6][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - REQUEST: [/], USERID [memberA]
+2024-04-26 09:53:31.845 [35m[http-nio-8080-exec-6][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - RESPONSE: [/], USERID [memberA]
+2024-04-26 09:53:31.883 [35m[http-nio-8080-exec-7][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - REQUEST: [/css/bootstrap.min.css], USERID [memberA]
+2024-04-26 09:53:31.888 [35m[http-nio-8080-exec-7][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - RESPONSE: [/css/bootstrap.min.css], USERID [memberA]
+2024-04-26 09:53:31.913 [35m[http-nio-8080-exec-8][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - REQUEST: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-26 09:53:31.930 [35m[http-nio-8080-exec-8][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - RESPONSE: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-26 09:53:31.930 [35m[http-nio-8080-exec-9][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - REQUEST: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-26 09:53:31.933 [35m[http-nio-8080-exec-9][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - RESPONSE: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-26 09:55:39.291 [35m[SpringContextShutdownHook][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.destroy - LogFilter destroy
+2024-04-26 09:55:39.306 [35m[SpringContextShutdownHook][0;39m [34mINFO [0;39m org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-04-26 09:55:41.478 [35m[main][0;39m Starting ItemServiceApplication using Java 15.0.10 on cheolhyeon-ui-MacBookAir.local with PID 8551 (/Users/cheolhyeon/Desktop/Login-Start/build/classes/java/main started by cheolhyeon in /Users/cheolhyeon/Desktop/Login-Start)
+2024-04-26 09:55:41.480 [35m[main][0;39m No active profile set, falling back to default profiles: default
+2024-04-26 09:55:42.076 [35m[main][0;39m Tomcat initialized with port(s): 8080 (http)
+2024-04-26 09:55:42.082 [35m[main][0;39m Starting service [Tomcat]
+2024-04-26 09:55:42.083 [35m[main][0;39m Starting Servlet engine: [Apache Tomcat/9.0.44]
+2024-04-26 09:55:42.118 [35m[main][0;39m Initializing Spring embedded WebApplicationContext
+2024-04-26 09:55:42.118 [35m[main][0;39m Root WebApplicationContext: initialization completed in 610 ms
+2024-04-26 09:55:42.144 [35m[main][0;39m LogFilter init
+2024-04-26 09:55:42.150 [35m[main][0;39m save : member = Member(id=1, loginId=memberA, name=memberA, password=memberA)
+2024-04-26 09:55:42.215 [35m[main][0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-04-26 09:55:42.328 [35m[main][0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-26 09:55:42.335 [35m[main][0;39m Started ItemServiceApplication in 1.14 seconds (JVM running for 2.026)
+2024-04-26 09:55:52.408 [35m[http-nio-8080-exec-1][0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-26 09:55:52.408 [35m[http-nio-8080-exec-1][0;39m Initializing Servlet 'dispatcherServlet'
+2024-04-26 09:55:52.410 [35m[http-nio-8080-exec-1][0;39m Completed initialization in 2 ms
+2024-04-26 09:55:52.415 [35m[http-nio-8080-exec-1][0;39m REQUEST: [/], USERID [null]
+2024-04-26 09:55:52.600 [35m[http-nio-8080-exec-1][0;39m RESPONSE: [/], USERID [null]
+2024-04-26 09:55:52.623 [35m[http-nio-8080-exec-2][0;39m REQUEST: [/css/bootstrap.min.css], USERID [null]
+2024-04-26 09:55:52.690 [35m[http-nio-8080-exec-2][0;39m RESPONSE: [/css/bootstrap.min.css], USERID [null]
+2024-04-26 09:55:52.787 [35m[http-nio-8080-exec-3][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-26 09:55:52.788 [35m[http-nio-8080-exec-3][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-26 09:56:16.277 [35m[http-nio-8080-exec-4][0;39m REQUEST: [/login], USERID [null]
+2024-04-26 09:56:16.332 [35m[http-nio-8080-exec-4][0;39m RESPONSE: [/login], USERID [null]
+2024-04-26 09:56:16.360 [35m[http-nio-8080-exec-5][0;39m REQUEST: [/css/bootstrap.min.css], USERID [null]
+2024-04-26 09:56:16.366 [35m[http-nio-8080-exec-5][0;39m RESPONSE: [/css/bootstrap.min.css], USERID [null]
+2024-04-26 09:56:16.390 [35m[http-nio-8080-exec-6][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-26 09:56:16.403 [35m[http-nio-8080-exec-6][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-26 09:56:16.407 [35m[http-nio-8080-exec-7][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-26 09:56:16.409 [35m[http-nio-8080-exec-7][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-26 09:56:19.552 [35m[http-nio-8080-exec-8][0;39m REQUEST: [/login], USERID [null]
+2024-04-26 09:56:19.626 [35m[http-nio-8080-exec-8][0;39m Login Success
+2024-04-26 09:56:19.627 [35m[http-nio-8080-exec-8][0;39m RESPONSE: [/login], USERID [null]
+2024-04-26 09:56:19.630 [35m[http-nio-8080-exec-9][0;39m REQUEST: [/], USERID [memberA]
+2024-04-26 09:56:19.637 [35m[http-nio-8080-exec-9][0;39m RESPONSE: [/], USERID [memberA]
+2024-04-26 09:56:19.666 [35m[http-nio-8080-exec-10][0;39m REQUEST: [/css/bootstrap.min.css], USERID [memberA]
+2024-04-26 09:56:19.670 [35m[http-nio-8080-exec-10][0;39m RESPONSE: [/css/bootstrap.min.css], USERID [memberA]
+2024-04-26 09:56:19.685 [35m[http-nio-8080-exec-1][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-26 09:56:19.689 [35m[http-nio-8080-exec-1][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-26 09:56:19.700 [35m[http-nio-8080-exec-1][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-26 09:56:19.701 [35m[http-nio-8080-exec-1][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-26 09:58:35.222 [35m[SpringContextShutdownHook][0;39m LogFilter destroy
+2024-04-26 09:58:35.242 [35m[SpringContextShutdownHook][0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2024-04-26 10:00:20.875 [35m[main][0;39m Starting ItemServiceApplication using Java 15.0.10 on cheolhyeon-ui-MacBookAir.local with PID 8684 (/Users/cheolhyeon/Desktop/Login-Start/build/classes/java/main started by cheolhyeon in /Users/cheolhyeon/Desktop/Login-Start)
+2024-04-26 10:00:20.877 [35m[main][0;39m No active profile set, falling back to default profiles: default
+2024-04-26 10:00:21.522 [35m[main][0;39m Tomcat initialized with port(s): 8080 (http)
+2024-04-26 10:00:21.529 [35m[main][0;39m Starting service [Tomcat]
+2024-04-26 10:00:21.530 [35m[main][0;39m Starting Servlet engine: [Apache Tomcat/9.0.44]
+2024-04-26 10:00:21.579 [35m[main][0;39m Initializing Spring embedded WebApplicationContext
+2024-04-26 10:00:21.580 [35m[main][0;39m Root WebApplicationContext: initialization completed in 677 ms
+2024-04-26 10:00:21.611 [35m[main][0;39m LogFilter init
+2024-04-26 10:00:21.618 [35m[main][0;39m save : member = Member(id=1, loginId=memberA, name=memberA, password=memberA)
+2024-04-26 10:00:21.704 [35m[main][0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-04-26 10:00:21.835 [35m[main][0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-26 10:00:21.844 [35m[main][0;39m Started ItemServiceApplication in 1.196 seconds (JVM running for 1.957)
+2024-04-26 10:00:26.430 [35m[http-nio-8080-exec-1][0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-26 10:00:26.430 [35m[http-nio-8080-exec-1][0;39m Initializing Servlet 'dispatcherServlet'
+2024-04-26 10:00:26.431 [35m[http-nio-8080-exec-1][0;39m Completed initialization in 1 ms
+2024-04-26 10:00:26.435 [35m[http-nio-8080-exec-1][0;39m REQUEST: [/], USERID [null]
+2024-04-26 10:00:26.616 [35m[http-nio-8080-exec-1][0;39m RESPONSE: [/], USERID [null]
+2024-04-26 10:00:26.617 [35m[http-nio-8080-exec-1][0;39m 
+
+2024-04-26 10:00:26.643 [35m[http-nio-8080-exec-2][0;39m REQUEST: [/css/bootstrap.min.css], USERID [null]
+2024-04-26 10:00:26.692 [35m[http-nio-8080-exec-2][0;39m RESPONSE: [/css/bootstrap.min.css], USERID [null]
+2024-04-26 10:00:26.692 [35m[http-nio-8080-exec-2][0;39m 
+
+2024-04-26 10:00:26.810 [35m[http-nio-8080-exec-3][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-26 10:00:26.811 [35m[http-nio-8080-exec-3][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-26 10:00:26.811 [35m[http-nio-8080-exec-3][0;39m 
+
+2024-04-26 10:00:44.005 [35m[http-nio-8080-exec-4][0;39m REQUEST: [/login], USERID [null]
+2024-04-26 10:00:44.056 [35m[http-nio-8080-exec-4][0;39m RESPONSE: [/login], USERID [null]
+2024-04-26 10:00:44.056 [35m[http-nio-8080-exec-4][0;39m 
+
+2024-04-26 10:00:44.097 [35m[http-nio-8080-exec-5][0;39m REQUEST: [/css/bootstrap.min.css], USERID [null]
+2024-04-26 10:00:44.104 [35m[http-nio-8080-exec-5][0;39m RESPONSE: [/css/bootstrap.min.css], USERID [null]
+2024-04-26 10:00:44.104 [35m[http-nio-8080-exec-5][0;39m 
+
+2024-04-26 10:00:44.123 [35m[http-nio-8080-exec-6][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-26 10:00:44.130 [35m[http-nio-8080-exec-6][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-26 10:00:44.130 [35m[http-nio-8080-exec-6][0;39m 
+
+2024-04-26 10:00:44.134 [35m[http-nio-8080-exec-7][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-26 10:00:44.136 [35m[http-nio-8080-exec-7][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-26 10:00:44.137 [35m[http-nio-8080-exec-7][0;39m 
+
+2024-04-26 10:00:55.093 [35m[http-nio-8080-exec-8][0;39m REQUEST: [/login], USERID [null]
+2024-04-26 10:00:55.176 [35m[http-nio-8080-exec-8][0;39m Login Success
+2024-04-26 10:00:55.179 [35m[http-nio-8080-exec-8][0;39m RESPONSE: [/login], USERID [null]
+2024-04-26 10:00:55.179 [35m[http-nio-8080-exec-8][0;39m 
+
+2024-04-26 10:00:55.182 [35m[http-nio-8080-exec-9][0;39m REQUEST: [/], USERID [memberA]
+2024-04-26 10:00:55.192 [35m[http-nio-8080-exec-9][0;39m RESPONSE: [/], USERID [memberA]
+2024-04-26 10:00:55.192 [35m[http-nio-8080-exec-9][0;39m 
+
+2024-04-26 10:00:55.233 [35m[http-nio-8080-exec-10][0;39m REQUEST: [/css/bootstrap.min.css], USERID [memberA]
+2024-04-26 10:00:55.238 [35m[http-nio-8080-exec-10][0;39m RESPONSE: [/css/bootstrap.min.css], USERID [memberA]
+2024-04-26 10:00:55.238 [35m[http-nio-8080-exec-10][0;39m 
+
+2024-04-26 10:00:55.250 [35m[http-nio-8080-exec-1][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-26 10:00:55.251 [35m[http-nio-8080-exec-1][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-26 10:00:55.251 [35m[http-nio-8080-exec-1][0;39m 
+
+2024-04-26 10:00:55.275 [35m[http-nio-8080-exec-2][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-26 10:00:55.278 [35m[http-nio-8080-exec-2][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-26 10:00:55.279 [35m[http-nio-8080-exec-2][0;39m 
+
+2024-04-26 10:01:06.705 [35m[http-nio-8080-exec-3][0;39m REQUEST: [/items/add], USERID [memberA]
+2024-04-26 10:01:06.732 [35m[http-nio-8080-exec-3][0;39m RESPONSE: [/items/add], USERID [memberA]
+2024-04-26 10:01:06.732 [35m[http-nio-8080-exec-3][0;39m 
+
+2024-04-26 10:01:06.763 [35m[http-nio-8080-exec-4][0;39m REQUEST: [/css/bootstrap.min.css], USERID [memberA]
+2024-04-26 10:01:06.768 [35m[http-nio-8080-exec-4][0;39m RESPONSE: [/css/bootstrap.min.css], USERID [memberA]
+2024-04-26 10:01:06.768 [35m[http-nio-8080-exec-4][0;39m 
+
+2024-04-26 10:01:06.773 [35m[http-nio-8080-exec-5][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-26 10:01:06.792 [35m[http-nio-8080-exec-5][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-26 10:01:06.793 [35m[http-nio-8080-exec-5][0;39m 
+
+2024-04-26 10:01:06.800 [35m[http-nio-8080-exec-6][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-26 10:01:06.802 [35m[http-nio-8080-exec-6][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-26 10:01:06.802 [35m[http-nio-8080-exec-6][0;39m 
+
+2024-04-26 10:01:52.909 [35m[SpringContextShutdownHook][0;39m LogFilter destroy
+2024-04-26 10:01:52.922 [35m[SpringContextShutdownHook][0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2024-04-26 10:01:55.016 [35m[main][0;39m Starting ItemServiceApplication using Java 15.0.10 on cheolhyeon-ui-MacBookAir.local with PID 8800 (/Users/cheolhyeon/Desktop/Login-Start/build/classes/java/main started by cheolhyeon in /Users/cheolhyeon/Desktop/Login-Start)
+2024-04-26 10:01:55.018 [35m[main][0;39m No active profile set, falling back to default profiles: default
+2024-04-26 10:01:55.808 [35m[main][0;39m Tomcat initialized with port(s): 8080 (http)
+2024-04-26 10:01:55.814 [35m[main][0;39m Starting service [Tomcat]
+2024-04-26 10:01:55.814 [35m[main][0;39m Starting Servlet engine: [Apache Tomcat/9.0.44]
+2024-04-26 10:01:55.851 [35m[main][0;39m Initializing Spring embedded WebApplicationContext
+2024-04-26 10:01:55.851 [35m[main][0;39m Root WebApplicationContext: initialization completed in 805 ms
+2024-04-26 10:01:55.877 [35m[main][0;39m LogFilter init
+2024-04-26 10:01:55.884 [35m[main][0;39m save : member = Member(id=1, loginId=memberA, name=memberA, password=memberA)
+2024-04-26 10:01:55.948 [35m[main][0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-04-26 10:01:56.064 [35m[main][0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-26 10:01:56.072 [35m[main][0;39m Started ItemServiceApplication in 1.302 seconds (JVM running for 1.842)
+2024-04-26 10:02:00.659 [35m[http-nio-8080-exec-1][0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-26 10:02:00.659 [35m[http-nio-8080-exec-1][0;39m Initializing Servlet 'dispatcherServlet'
+2024-04-26 10:02:00.661 [35m[http-nio-8080-exec-1][0;39m Completed initialization in 2 ms
+2024-04-26 10:02:00.665 [35m[http-nio-8080-exec-1][0;39m -----------------------------------------------
+2024-04-26 10:02:00.665 [35m[http-nio-8080-exec-1][0;39m REQUEST: [/items/add], USERID [null]
+2024-04-26 10:02:00.889 [35m[http-nio-8080-exec-1][0;39m RESPONSE: [/items/add], USERID [null]
+2024-04-26 10:02:00.889 [35m[http-nio-8080-exec-1][0;39m -----------------------------------------------
+2024-04-26 10:02:00.889 [35m[http-nio-8080-exec-1][0;39m 
+
+2024-04-26 10:02:00.917 [35m[http-nio-8080-exec-2][0;39m -----------------------------------------------
+2024-04-26 10:02:00.917 [35m[http-nio-8080-exec-2][0;39m REQUEST: [/css/bootstrap.min.css], USERID [null]
+2024-04-26 10:02:00.957 [35m[http-nio-8080-exec-2][0;39m RESPONSE: [/css/bootstrap.min.css], USERID [null]
+2024-04-26 10:02:00.957 [35m[http-nio-8080-exec-2][0;39m -----------------------------------------------
+2024-04-26 10:02:00.958 [35m[http-nio-8080-exec-2][0;39m 
+
+2024-04-26 10:02:01.211 [35m[http-nio-8080-exec-3][0;39m -----------------------------------------------
+2024-04-26 10:02:01.211 [35m[http-nio-8080-exec-3][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-26 10:02:01.213 [35m[http-nio-8080-exec-3][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-26 10:02:01.214 [35m[http-nio-8080-exec-3][0;39m -----------------------------------------------
+2024-04-26 10:02:01.214 [35m[http-nio-8080-exec-3][0;39m 
+
+2024-04-26 10:02:18.026 [35m[SpringContextShutdownHook][0;39m LogFilter destroy
+2024-04-26 10:02:18.033 [35m[SpringContextShutdownHook][0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2024-04-26 11:30:42.156 [35m[main][0;39m Starting ItemServiceApplication using Java 15.0.10 on cheolhyeon-ui-MacBookAir.local with PID 10890 (/Users/cheolhyeon/Desktop/Login-Start/build/classes/java/main started by cheolhyeon in /Users/cheolhyeon/Desktop/Login-Start)
+2024-04-26 11:30:42.160 [35m[main][0;39m No active profile set, falling back to default profiles: default
+2024-04-26 11:30:42.712 [35m[main][0;39m Tomcat initialized with port(s): 8080 (http)
+2024-04-26 11:30:42.719 [35m[main][0;39m Starting service [Tomcat]
+2024-04-26 11:30:42.719 [35m[main][0;39m Starting Servlet engine: [Apache Tomcat/9.0.44]
+2024-04-26 11:30:42.757 [35m[main][0;39m Initializing Spring embedded WebApplicationContext
+2024-04-26 11:30:42.757 [35m[main][0;39m Root WebApplicationContext: initialization completed in 570 ms
+2024-04-26 11:30:42.784 [35m[main][0;39m LogFilter init
+2024-04-26 11:30:42.790 [35m[main][0;39m save : member = Member(id=1, loginId=memberA, name=memberA, password=memberA)
+2024-04-26 11:30:42.861 [35m[main][0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-04-26 11:30:42.973 [35m[main][0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-26 11:30:42.981 [35m[main][0;39m Started ItemServiceApplication in 1.068 seconds (JVM running for 1.787)
+2024-04-26 11:30:51.604 [35m[http-nio-8080-exec-1][0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-26 11:30:51.604 [35m[http-nio-8080-exec-1][0;39m Initializing Servlet 'dispatcherServlet'
+2024-04-26 11:30:51.606 [35m[http-nio-8080-exec-1][0;39m Completed initialization in 2 ms
+2024-04-26 11:30:51.619 [35m[http-nio-8080-exec-1][0;39m -----------------------------------------------
+2024-04-26 11:30:51.619 [35m[http-nio-8080-exec-1][0;39m REQUEST: [/], USERID [null]
+2024-04-26 11:30:51.810 [35m[http-nio-8080-exec-1][0;39m RESPONSE: [/], USERID [null]
+2024-04-26 11:30:51.810 [35m[http-nio-8080-exec-1][0;39m -----------------------------------------------
+2024-04-26 11:30:51.811 [35m[http-nio-8080-exec-1][0;39m 
+
+2024-04-26 11:30:51.888 [35m[http-nio-8080-exec-2][0;39m -----------------------------------------------
+2024-04-26 11:30:51.889 [35m[http-nio-8080-exec-2][0;39m REQUEST: [/css/bootstrap.min.css], USERID [null]
+2024-04-26 11:30:51.933 [35m[http-nio-8080-exec-2][0;39m RESPONSE: [/css/bootstrap.min.css], USERID [null]
+2024-04-26 11:30:51.934 [35m[http-nio-8080-exec-2][0;39m -----------------------------------------------
+2024-04-26 11:30:51.934 [35m[http-nio-8080-exec-2][0;39m 
+
+2024-04-26 11:31:00.515 [35m[http-nio-8080-exec-3][0;39m -----------------------------------------------
+2024-04-26 11:31:00.518 [35m[http-nio-8080-exec-3][0;39m REQUEST: [/login], USERID [null]
+2024-04-26 11:31:00.585 [35m[http-nio-8080-exec-3][0;39m RESPONSE: [/login], USERID [null]
+2024-04-26 11:31:00.585 [35m[http-nio-8080-exec-3][0;39m -----------------------------------------------
+2024-04-26 11:31:00.585 [35m[http-nio-8080-exec-3][0;39m 
+
+2024-04-26 11:31:00.597 [35m[http-nio-8080-exec-4][0;39m -----------------------------------------------
+2024-04-26 11:31:00.597 [35m[http-nio-8080-exec-4][0;39m REQUEST: [/css/bootstrap.min.css], USERID [null]
+2024-04-26 11:31:00.598 [35m[http-nio-8080-exec-4][0;39m RESPONSE: [/css/bootstrap.min.css], USERID [null]
+2024-04-26 11:31:00.599 [35m[http-nio-8080-exec-4][0;39m -----------------------------------------------
+2024-04-26 11:31:00.599 [35m[http-nio-8080-exec-4][0;39m 
+
+2024-04-26 11:31:11.339 [35m[http-nio-8080-exec-5][0;39m -----------------------------------------------
+2024-04-26 11:31:11.340 [35m[http-nio-8080-exec-5][0;39m REQUEST: [/login], USERID [null]
+2024-04-26 11:31:11.415 [35m[http-nio-8080-exec-5][0;39m Login Success
+2024-04-26 11:31:11.416 [35m[http-nio-8080-exec-5][0;39m RESPONSE: [/login], USERID [null]
+2024-04-26 11:31:11.416 [35m[http-nio-8080-exec-5][0;39m -----------------------------------------------
+2024-04-26 11:31:11.416 [35m[http-nio-8080-exec-5][0;39m 
+
+2024-04-26 11:31:11.420 [35m[http-nio-8080-exec-6][0;39m -----------------------------------------------
+2024-04-26 11:31:11.420 [35m[http-nio-8080-exec-6][0;39m REQUEST: [/], USERID [memberA]
+2024-04-26 11:31:11.426 [35m[http-nio-8080-exec-6][0;39m RESPONSE: [/], USERID [memberA]
+2024-04-26 11:31:11.426 [35m[http-nio-8080-exec-6][0;39m -----------------------------------------------
+2024-04-26 11:31:11.426 [35m[http-nio-8080-exec-6][0;39m 
+
+2024-04-26 11:31:11.437 [35m[http-nio-8080-exec-7][0;39m -----------------------------------------------
+2024-04-26 11:31:11.437 [35m[http-nio-8080-exec-7][0;39m REQUEST: [/css/bootstrap.min.css], USERID [memberA]
+2024-04-26 11:31:11.438 [35m[http-nio-8080-exec-7][0;39m RESPONSE: [/css/bootstrap.min.css], USERID [memberA]
+2024-04-26 11:31:11.438 [35m[http-nio-8080-exec-7][0;39m -----------------------------------------------
+2024-04-26 11:31:11.438 [35m[http-nio-8080-exec-7][0;39m 
+
+2024-04-26 11:31:21.716 [35m[http-nio-8080-exec-8][0;39m -----------------------------------------------
+2024-04-26 11:31:21.720 [35m[http-nio-8080-exec-8][0;39m REQUEST: [/items/add], USERID [memberA]
+2024-04-26 11:31:21.746 [35m[http-nio-8080-exec-8][0;39m RESPONSE: [/items/add], USERID [memberA]
+2024-04-26 11:31:21.746 [35m[http-nio-8080-exec-8][0;39m -----------------------------------------------
+2024-04-26 11:31:21.746 [35m[http-nio-8080-exec-8][0;39m 
+
+2024-04-26 11:31:21.759 [35m[http-nio-8080-exec-9][0;39m -----------------------------------------------
+2024-04-26 11:31:21.764 [35m[http-nio-8080-exec-9][0;39m REQUEST: [/css/bootstrap.min.css], USERID [memberA]
+2024-04-26 11:31:21.766 [35m[http-nio-8080-exec-9][0;39m RESPONSE: [/css/bootstrap.min.css], USERID [memberA]
+2024-04-26 11:31:21.768 [35m[http-nio-8080-exec-9][0;39m -----------------------------------------------
+2024-04-26 11:31:21.768 [35m[http-nio-8080-exec-9][0;39m 
+
+2024-04-26 11:33:46.577 [35m[http-nio-8080-exec-2][0;39m -----------------------------------------------
+2024-04-26 11:33:46.580 [35m[http-nio-8080-exec-2][0;39m REQUEST: [/login], USERID [null]
+2024-04-26 11:33:46.590 [35m[http-nio-8080-exec-2][0;39m RESPONSE: [/login], USERID [null]
+2024-04-26 11:33:46.591 [35m[http-nio-8080-exec-2][0;39m -----------------------------------------------
+2024-04-26 11:33:46.591 [35m[http-nio-8080-exec-2][0;39m 
+
+2024-04-26 11:33:48.031 [35m[http-nio-8080-exec-3][0;39m -----------------------------------------------
+2024-04-26 11:33:48.032 [35m[http-nio-8080-exec-3][0;39m REQUEST: [/logout], USERID [null]
+2024-04-26 11:33:48.033 [35m[http-nio-8080-exec-3][0;39m RESPONSE: [/logout], USERID [null]
+2024-04-26 11:33:48.033 [35m[http-nio-8080-exec-3][0;39m -----------------------------------------------
+2024-04-26 11:33:48.033 [35m[http-nio-8080-exec-3][0;39m 
+
+2024-04-26 11:33:48.037 [35m[http-nio-8080-exec-4][0;39m -----------------------------------------------
+2024-04-26 11:33:48.037 [35m[http-nio-8080-exec-4][0;39m REQUEST: [/], USERID [null]
+2024-04-26 11:33:48.039 [35m[http-nio-8080-exec-4][0;39m RESPONSE: [/], USERID [null]
+2024-04-26 11:33:48.039 [35m[http-nio-8080-exec-4][0;39m -----------------------------------------------
+2024-04-26 11:33:48.040 [35m[http-nio-8080-exec-4][0;39m 
+
+2024-04-26 11:33:48.050 [35m[http-nio-8080-exec-5][0;39m -----------------------------------------------
+2024-04-26 11:33:48.050 [35m[http-nio-8080-exec-5][0;39m REQUEST: [/css/bootstrap.min.css], USERID [null]
+2024-04-26 11:33:48.054 [35m[http-nio-8080-exec-5][0;39m RESPONSE: [/css/bootstrap.min.css], USERID [null]
+2024-04-26 11:33:48.054 [35m[http-nio-8080-exec-5][0;39m -----------------------------------------------
+2024-04-26 11:33:48.054 [35m[http-nio-8080-exec-5][0;39m 
+
+2024-04-26 11:33:48.751 [35m[http-nio-8080-exec-8][0;39m -----------------------------------------------
+2024-04-26 11:33:48.751 [35m[http-nio-8080-exec-8][0;39m REQUEST: [/members/add], USERID [memberA]
+2024-04-26 11:33:48.768 [35m[http-nio-8080-exec-8][0;39m RESPONSE: [/members/add], USERID [memberA]
+2024-04-26 11:33:48.769 [35m[http-nio-8080-exec-8][0;39m -----------------------------------------------
+2024-04-26 11:33:48.769 [35m[http-nio-8080-exec-8][0;39m 
+
+2024-04-26 11:33:52.692 [35m[http-nio-8080-exec-9][0;39m -----------------------------------------------
+2024-04-26 11:33:52.692 [35m[http-nio-8080-exec-9][0;39m REQUEST: [/members/add], USERID [memberA]
+2024-04-26 11:33:52.701 [35m[http-nio-8080-exec-9][0;39m save : member = Member(id=2, loginId=qweqwe, name=123123, password=123123)
+2024-04-26 11:33:52.703 [35m[http-nio-8080-exec-9][0;39m RESPONSE: [/members/add], USERID [memberA]
+2024-04-26 11:33:52.703 [35m[http-nio-8080-exec-9][0;39m -----------------------------------------------
+2024-04-26 11:33:52.703 [35m[http-nio-8080-exec-9][0;39m 
+
+2024-04-26 11:33:52.707 [35m[http-nio-8080-exec-10][0;39m -----------------------------------------------
+2024-04-26 11:33:52.707 [35m[http-nio-8080-exec-10][0;39m REQUEST: [/], USERID [null]
+2024-04-26 11:33:52.709 [35m[http-nio-8080-exec-10][0;39m RESPONSE: [/], USERID [null]
+2024-04-26 11:33:52.709 [35m[http-nio-8080-exec-10][0;39m -----------------------------------------------
+2024-04-26 11:33:52.709 [35m[http-nio-8080-exec-10][0;39m 
+
+2024-04-26 11:33:55.725 [35m[http-nio-8080-exec-3][0;39m -----------------------------------------------
+2024-04-26 11:33:55.725 [35m[http-nio-8080-exec-3][0;39m REQUEST: [/login], USERID [null]
+2024-04-26 11:33:55.729 [35m[http-nio-8080-exec-3][0;39m RESPONSE: [/login], USERID [null]
+2024-04-26 11:33:55.729 [35m[http-nio-8080-exec-3][0;39m -----------------------------------------------
+2024-04-26 11:33:55.729 [35m[http-nio-8080-exec-3][0;39m 
+
+2024-04-26 11:33:57.479 [35m[http-nio-8080-exec-4][0;39m -----------------------------------------------
+2024-04-26 11:33:57.479 [35m[http-nio-8080-exec-4][0;39m REQUEST: [/login], USERID [null]
+2024-04-26 11:33:57.480 [35m[http-nio-8080-exec-4][0;39m Login Success
+2024-04-26 11:33:57.481 [35m[http-nio-8080-exec-4][0;39m RESPONSE: [/login], USERID [null]
+2024-04-26 11:33:57.481 [35m[http-nio-8080-exec-4][0;39m -----------------------------------------------
+2024-04-26 11:33:57.481 [35m[http-nio-8080-exec-4][0;39m 
+
+2024-04-26 11:33:57.484 [35m[http-nio-8080-exec-5][0;39m -----------------------------------------------
+2024-04-26 11:33:57.484 [35m[http-nio-8080-exec-5][0;39m REQUEST: [/], USERID [qweqwe]
+2024-04-26 11:33:57.486 [35m[http-nio-8080-exec-5][0;39m RESPONSE: [/], USERID [qweqwe]
+2024-04-26 11:33:57.487 [35m[http-nio-8080-exec-5][0;39m -----------------------------------------------
+2024-04-26 11:33:57.487 [35m[http-nio-8080-exec-5][0;39m 
+
+2024-04-26 11:34:22.721 [35m[SpringContextShutdownHook][0;39m LogFilter destroy
+2024-04-26 11:34:22.733 [35m[SpringContextShutdownHook][0;39m Shutting down ExecutorService 'applicationTaskExecutor'

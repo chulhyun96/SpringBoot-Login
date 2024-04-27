@@ -1,78 +1,484 @@
-2024-04-26 09:52:23.462 [35m[main][0;39m [34mINFO [0;39m hello.login.ItemServiceApplication.logStarting - Starting ItemServiceApplication using Java 15.0.10 on cheolhyeon-ui-MacBookAir.local with PID 8465 (/Users/cheolhyeon/Desktop/Login-Start/build/classes/java/main started by cheolhyeon in /Users/cheolhyeon/Desktop/Login-Start)
-2024-04-26 09:52:23.468 [35m[main][0;39m [34mINFO [0;39m hello.login.ItemServiceApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
-2024-04-26 09:52:24.286 [35m[main][0;39m [34mINFO [0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
-2024-04-26 09:52:24.293 [35m[main][0;39m [34mINFO [0;39m org.apache.catalina.core.StandardService.log - Starting service [Tomcat]
-2024-04-26 09:52:24.293 [35m[main][0;39m [34mINFO [0;39m org.apache.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.44]
-2024-04-26 09:52:24.331 [35m[main][0;39m [34mINFO [0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
-2024-04-26 09:52:24.331 [35m[main][0;39m [34mINFO [0;39m org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 826 ms
-2024-04-26 09:52:24.358 [35m[main][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.init - LogFilter init
-2024-04-26 09:52:24.365 [35m[main][0;39m [34mINFO [0;39m hello.login.domain.member.MemberRepository.save - save : member = Member(id=1, loginId=memberA, name=memberA, password=memberA)
-2024-04-26 09:52:24.433 [35m[main][0;39m [34mINFO [0;39m org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
-2024-04-26 09:52:24.551 [35m[main][0;39m [34mINFO [0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
-2024-04-26 09:52:24.558 [35m[main][0;39m [34mINFO [0;39m hello.login.ItemServiceApplication.logStarted - Started ItemServiceApplication in 1.314 seconds (JVM running for 1.816)
-2024-04-26 09:53:27.217 [35m[http-nio-8080-exec-1][0;39m [34mINFO [0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-04-26 09:53:27.218 [35m[http-nio-8080-exec-1][0;39m [34mINFO [0;39m org.springframework.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
-2024-04-26 09:53:27.219 [35m[http-nio-8080-exec-1][0;39m [34mINFO [0;39m org.springframework.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 1 ms
-2024-04-26 09:53:27.224 [35m[http-nio-8080-exec-1][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - REQUEST: [/login], USERID [null]
-2024-04-26 09:53:27.424 [35m[http-nio-8080-exec-1][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - RESPONSE: [/login], USERID [null]
-2024-04-26 09:53:27.496 [35m[http-nio-8080-exec-2][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - REQUEST: [/css/bootstrap.min.css], USERID [null]
-2024-04-26 09:53:27.527 [35m[http-nio-8080-exec-3][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - REQUEST: [/css/bootstrap.min.css.map], USERID [null]
-2024-04-26 09:53:27.531 [35m[http-nio-8080-exec-3][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - RESPONSE: [/css/bootstrap.min.css.map], USERID [null]
-2024-04-26 09:53:27.548 [35m[http-nio-8080-exec-2][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - RESPONSE: [/css/bootstrap.min.css], USERID [null]
-2024-04-26 09:53:27.698 [35m[http-nio-8080-exec-4][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - REQUEST: [/css/bootstrap.min.css.map], USERID [null]
-2024-04-26 09:53:27.699 [35m[http-nio-8080-exec-4][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - RESPONSE: [/css/bootstrap.min.css.map], USERID [null]
-2024-04-26 09:53:31.747 [35m[http-nio-8080-exec-5][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - REQUEST: [/login], USERID [null]
-2024-04-26 09:53:31.827 [35m[http-nio-8080-exec-5][0;39m [34mINFO [0;39m hello.login.web.login.LoginController.loginV2 - Login Success
-2024-04-26 09:53:31.829 [35m[http-nio-8080-exec-5][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - RESPONSE: [/login], USERID [null]
-2024-04-26 09:53:31.835 [35m[http-nio-8080-exec-6][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - REQUEST: [/], USERID [memberA]
-2024-04-26 09:53:31.845 [35m[http-nio-8080-exec-6][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - RESPONSE: [/], USERID [memberA]
-2024-04-26 09:53:31.883 [35m[http-nio-8080-exec-7][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - REQUEST: [/css/bootstrap.min.css], USERID [memberA]
-2024-04-26 09:53:31.888 [35m[http-nio-8080-exec-7][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - RESPONSE: [/css/bootstrap.min.css], USERID [memberA]
-2024-04-26 09:53:31.913 [35m[http-nio-8080-exec-8][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - REQUEST: [/css/bootstrap.min.css.map], USERID [memberA]
-2024-04-26 09:53:31.930 [35m[http-nio-8080-exec-8][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - RESPONSE: [/css/bootstrap.min.css.map], USERID [memberA]
-2024-04-26 09:53:31.930 [35m[http-nio-8080-exec-9][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - REQUEST: [/css/bootstrap.min.css.map], USERID [memberA]
-2024-04-26 09:53:31.933 [35m[http-nio-8080-exec-9][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.doFilter - RESPONSE: [/css/bootstrap.min.css.map], USERID [memberA]
-2024-04-26 09:55:39.291 [35m[SpringContextShutdownHook][0;39m [34mINFO [0;39m hello.login.web.filter.LogFilter.destroy - LogFilter destroy
-2024-04-26 09:55:39.306 [35m[SpringContextShutdownHook][0;39m [34mINFO [0;39m org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
-2024-04-26 09:55:41.478 [35m[main][0;39m Starting ItemServiceApplication using Java 15.0.10 on cheolhyeon-ui-MacBookAir.local with PID 8551 (/Users/cheolhyeon/Desktop/Login-Start/build/classes/java/main started by cheolhyeon in /Users/cheolhyeon/Desktop/Login-Start)
-2024-04-26 09:55:41.480 [35m[main][0;39m No active profile set, falling back to default profiles: default
-2024-04-26 09:55:42.076 [35m[main][0;39m Tomcat initialized with port(s): 8080 (http)
-2024-04-26 09:55:42.082 [35m[main][0;39m Starting service [Tomcat]
-2024-04-26 09:55:42.083 [35m[main][0;39m Starting Servlet engine: [Apache Tomcat/9.0.44]
-2024-04-26 09:55:42.118 [35m[main][0;39m Initializing Spring embedded WebApplicationContext
-2024-04-26 09:55:42.118 [35m[main][0;39m Root WebApplicationContext: initialization completed in 610 ms
-2024-04-26 09:55:42.144 [35m[main][0;39m LogFilter init
-2024-04-26 09:55:42.150 [35m[main][0;39m save : member = Member(id=1, loginId=memberA, name=memberA, password=memberA)
-2024-04-26 09:55:42.215 [35m[main][0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2024-04-26 09:55:42.328 [35m[main][0;39m Tomcat started on port(s): 8080 (http) with context path ''
-2024-04-26 09:55:42.335 [35m[main][0;39m Started ItemServiceApplication in 1.14 seconds (JVM running for 2.026)
-2024-04-26 09:55:52.408 [35m[http-nio-8080-exec-1][0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-04-26 09:55:52.408 [35m[http-nio-8080-exec-1][0;39m Initializing Servlet 'dispatcherServlet'
-2024-04-26 09:55:52.410 [35m[http-nio-8080-exec-1][0;39m Completed initialization in 2 ms
-2024-04-26 09:55:52.415 [35m[http-nio-8080-exec-1][0;39m REQUEST: [/], USERID [null]
-2024-04-26 09:55:52.600 [35m[http-nio-8080-exec-1][0;39m RESPONSE: [/], USERID [null]
-2024-04-26 09:55:52.623 [35m[http-nio-8080-exec-2][0;39m REQUEST: [/css/bootstrap.min.css], USERID [null]
-2024-04-26 09:55:52.690 [35m[http-nio-8080-exec-2][0;39m RESPONSE: [/css/bootstrap.min.css], USERID [null]
-2024-04-26 09:55:52.787 [35m[http-nio-8080-exec-3][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [null]
-2024-04-26 09:55:52.788 [35m[http-nio-8080-exec-3][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [null]
-2024-04-26 09:56:16.277 [35m[http-nio-8080-exec-4][0;39m REQUEST: [/login], USERID [null]
-2024-04-26 09:56:16.332 [35m[http-nio-8080-exec-4][0;39m RESPONSE: [/login], USERID [null]
-2024-04-26 09:56:16.360 [35m[http-nio-8080-exec-5][0;39m REQUEST: [/css/bootstrap.min.css], USERID [null]
-2024-04-26 09:56:16.366 [35m[http-nio-8080-exec-5][0;39m RESPONSE: [/css/bootstrap.min.css], USERID [null]
-2024-04-26 09:56:16.390 [35m[http-nio-8080-exec-6][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [null]
-2024-04-26 09:56:16.403 [35m[http-nio-8080-exec-6][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [null]
-2024-04-26 09:56:16.407 [35m[http-nio-8080-exec-7][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [null]
-2024-04-26 09:56:16.409 [35m[http-nio-8080-exec-7][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [null]
-2024-04-26 09:56:19.552 [35m[http-nio-8080-exec-8][0;39m REQUEST: [/login], USERID [null]
-2024-04-26 09:56:19.626 [35m[http-nio-8080-exec-8][0;39m Login Success
-2024-04-26 09:56:19.627 [35m[http-nio-8080-exec-8][0;39m RESPONSE: [/login], USERID [null]
-2024-04-26 09:56:19.630 [35m[http-nio-8080-exec-9][0;39m REQUEST: [/], USERID [memberA]
-2024-04-26 09:56:19.637 [35m[http-nio-8080-exec-9][0;39m RESPONSE: [/], USERID [memberA]
-2024-04-26 09:56:19.666 [35m[http-nio-8080-exec-10][0;39m REQUEST: [/css/bootstrap.min.css], USERID [memberA]
-2024-04-26 09:56:19.670 [35m[http-nio-8080-exec-10][0;39m RESPONSE: [/css/bootstrap.min.css], USERID [memberA]
-2024-04-26 09:56:19.685 [35m[http-nio-8080-exec-1][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [memberA]
-2024-04-26 09:56:19.689 [35m[http-nio-8080-exec-1][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [memberA]
-2024-04-26 09:56:19.700 [35m[http-nio-8080-exec-1][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [memberA]
-2024-04-26 09:56:19.701 [35m[http-nio-8080-exec-1][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [memberA]
-2024-04-26 09:58:35.222 [35m[SpringContextShutdownHook][0;39m LogFilter destroy
-2024-04-26 09:58:35.242 [35m[SpringContextShutdownHook][0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2024-04-27 14:58:26.340 [35m[main][0;39m Starting ItemServiceApplication using Java 15.0.10 on cheolhyeon-ui-MacBookAir.local with PID 27389 (/Users/cheolhyeon/Desktop/Login-Start/build/classes/java/main started by cheolhyeon in /Users/cheolhyeon/Desktop/Login-Start)
+2024-04-27 14:58:26.344 [35m[main][0;39m No active profile set, falling back to default profiles: default
+2024-04-27 14:58:27.207 [35m[main][0;39m Tomcat initialized with port(s): 8080 (http)
+2024-04-27 14:58:27.216 [35m[main][0;39m Starting service [Tomcat]
+2024-04-27 14:58:27.216 [35m[main][0;39m Starting Servlet engine: [Apache Tomcat/9.0.44]
+2024-04-27 14:58:27.270 [35m[main][0;39m Initializing Spring embedded WebApplicationContext
+2024-04-27 14:58:27.271 [35m[main][0;39m Root WebApplicationContext: initialization completed in 899 ms
+2024-04-27 14:58:27.305 [35m[main][0;39m LogFilter init
+2024-04-27 14:58:27.314 [35m[main][0;39m save : member = Member(id=1, loginId=memberA, name=memberA, password=memberA)
+2024-04-27 14:58:27.397 [35m[main][0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-04-27 14:58:27.524 [35m[main][0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-27 14:58:27.532 [35m[main][0;39m Started ItemServiceApplication in 1.453 seconds (JVM running for 2.397)
+2024-04-27 15:04:33.505 [35m[http-nio-8080-exec-1][0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-27 15:04:33.506 [35m[http-nio-8080-exec-1][0;39m Initializing Servlet 'dispatcherServlet'
+2024-04-27 15:04:33.507 [35m[http-nio-8080-exec-1][0;39m Completed initialization in 1 ms
+2024-04-27 15:04:33.512 [35m[http-nio-8080-exec-1][0;39m -----------------------------------------------
+2024-04-27 15:04:33.512 [35m[http-nio-8080-exec-1][0;39m REQUEST: [/items/add], USERID [null]
+2024-04-27 15:04:33.512 [35m[http-nio-8080-exec-1][0;39m 인증 체크 필터 시작: /items/add
+2024-04-27 15:04:33.513 [35m[http-nio-8080-exec-1][0;39m 인증 체크 로직 시작: /items/add
+2024-04-27 15:04:33.513 [35m[http-nio-8080-exec-1][0;39m 미인증 사용자 체크: /items/add
+2024-04-27 15:04:33.513 [35m[http-nio-8080-exec-1][0;39m 인증 체크 종료: /items/add
+2024-04-27 15:04:33.513 [35m[http-nio-8080-exec-1][0;39m RESPONSE: [/items/add], USERID [null]
+2024-04-27 15:04:33.513 [35m[http-nio-8080-exec-1][0;39m -----------------------------------------------
+2024-04-27 15:04:33.513 [35m[http-nio-8080-exec-1][0;39m 
+
+2024-04-27 15:04:33.526 [35m[http-nio-8080-exec-2][0;39m -----------------------------------------------
+2024-04-27 15:04:33.526 [35m[http-nio-8080-exec-2][0;39m REQUEST: [/login], USERID [null]
+2024-04-27 15:04:33.526 [35m[http-nio-8080-exec-2][0;39m 인증 체크 필터 시작: /login
+2024-04-27 15:04:33.739 [35m[http-nio-8080-exec-2][0;39m 인증 체크 종료: /login
+2024-04-27 15:04:33.740 [35m[http-nio-8080-exec-2][0;39m RESPONSE: [/login], USERID [null]
+2024-04-27 15:04:33.740 [35m[http-nio-8080-exec-2][0;39m -----------------------------------------------
+2024-04-27 15:04:33.740 [35m[http-nio-8080-exec-2][0;39m 
+
+2024-04-27 15:04:33.802 [35m[http-nio-8080-exec-3][0;39m -----------------------------------------------
+2024-04-27 15:04:33.802 [35m[http-nio-8080-exec-3][0;39m REQUEST: [/css/bootstrap.min.css], USERID [null]
+2024-04-27 15:04:33.802 [35m[http-nio-8080-exec-3][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css
+2024-04-27 15:04:33.826 [35m[http-nio-8080-exec-3][0;39m 인증 체크 종료: /css/bootstrap.min.css
+2024-04-27 15:04:33.826 [35m[http-nio-8080-exec-3][0;39m RESPONSE: [/css/bootstrap.min.css], USERID [null]
+2024-04-27 15:04:33.826 [35m[http-nio-8080-exec-3][0;39m -----------------------------------------------
+2024-04-27 15:04:33.826 [35m[http-nio-8080-exec-3][0;39m 
+
+2024-04-27 15:04:33.958 [35m[http-nio-8080-exec-4][0;39m -----------------------------------------------
+2024-04-27 15:04:33.958 [35m[http-nio-8080-exec-4][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-27 15:04:33.958 [35m[http-nio-8080-exec-4][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-27 15:04:33.959 [35m[http-nio-8080-exec-4][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-27 15:04:33.959 [35m[http-nio-8080-exec-4][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-27 15:04:33.959 [35m[http-nio-8080-exec-4][0;39m -----------------------------------------------
+2024-04-27 15:04:33.959 [35m[http-nio-8080-exec-4][0;39m 
+
+2024-04-27 15:04:43.943 [35m[http-nio-8080-exec-6][0;39m -----------------------------------------------
+2024-04-27 15:04:43.945 [35m[http-nio-8080-exec-6][0;39m REQUEST: [/login], USERID [null]
+2024-04-27 15:04:43.945 [35m[http-nio-8080-exec-6][0;39m 인증 체크 필터 시작: /login
+2024-04-27 15:04:44.023 [35m[http-nio-8080-exec-6][0;39m Login Success
+2024-04-27 15:04:44.025 [35m[http-nio-8080-exec-6][0;39m 인증 체크 종료: /login
+2024-04-27 15:04:44.025 [35m[http-nio-8080-exec-6][0;39m RESPONSE: [/login], USERID [null]
+2024-04-27 15:04:44.025 [35m[http-nio-8080-exec-6][0;39m -----------------------------------------------
+2024-04-27 15:04:44.025 [35m[http-nio-8080-exec-6][0;39m 
+
+2024-04-27 15:04:44.029 [35m[http-nio-8080-exec-7][0;39m -----------------------------------------------
+2024-04-27 15:04:44.029 [35m[http-nio-8080-exec-7][0;39m REQUEST: [/], USERID [memberA]
+2024-04-27 15:04:44.029 [35m[http-nio-8080-exec-7][0;39m 인증 체크 필터 시작: /
+2024-04-27 15:04:44.038 [35m[http-nio-8080-exec-7][0;39m 인증 체크 종료: /
+2024-04-27 15:04:44.038 [35m[http-nio-8080-exec-7][0;39m RESPONSE: [/], USERID [memberA]
+2024-04-27 15:04:44.038 [35m[http-nio-8080-exec-7][0;39m -----------------------------------------------
+2024-04-27 15:04:44.038 [35m[http-nio-8080-exec-7][0;39m 
+
+2024-04-27 15:04:44.079 [35m[http-nio-8080-exec-8][0;39m -----------------------------------------------
+2024-04-27 15:04:44.080 [35m[http-nio-8080-exec-8][0;39m REQUEST: [/css/bootstrap.min.css], USERID [memberA]
+2024-04-27 15:04:44.080 [35m[http-nio-8080-exec-8][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css
+2024-04-27 15:04:44.105 [35m[http-nio-8080-exec-8][0;39m 인증 체크 종료: /css/bootstrap.min.css
+2024-04-27 15:04:44.105 [35m[http-nio-8080-exec-8][0;39m RESPONSE: [/css/bootstrap.min.css], USERID [memberA]
+2024-04-27 15:04:44.106 [35m[http-nio-8080-exec-8][0;39m -----------------------------------------------
+2024-04-27 15:04:44.106 [35m[http-nio-8080-exec-8][0;39m 
+
+2024-04-27 15:04:44.107 [35m[http-nio-8080-exec-9][0;39m -----------------------------------------------
+2024-04-27 15:04:44.107 [35m[http-nio-8080-exec-9][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:04:44.107 [35m[http-nio-8080-exec-9][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-27 15:04:44.111 [35m[http-nio-8080-exec-9][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-27 15:04:44.111 [35m[http-nio-8080-exec-9][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:04:44.111 [35m[http-nio-8080-exec-9][0;39m -----------------------------------------------
+2024-04-27 15:04:44.111 [35m[http-nio-8080-exec-9][0;39m 
+
+2024-04-27 15:04:44.246 [35m[http-nio-8080-exec-10][0;39m -----------------------------------------------
+2024-04-27 15:04:44.246 [35m[http-nio-8080-exec-10][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:04:44.246 [35m[http-nio-8080-exec-10][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-27 15:04:44.247 [35m[http-nio-8080-exec-10][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-27 15:04:44.247 [35m[http-nio-8080-exec-10][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:04:44.247 [35m[http-nio-8080-exec-10][0;39m -----------------------------------------------
+2024-04-27 15:04:44.247 [35m[http-nio-8080-exec-10][0;39m 
+
+2024-04-27 15:04:45.266 [35m[http-nio-8080-exec-1][0;39m -----------------------------------------------
+2024-04-27 15:04:45.266 [35m[http-nio-8080-exec-1][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:04:45.267 [35m[http-nio-8080-exec-1][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-27 15:04:45.268 [35m[http-nio-8080-exec-1][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-27 15:04:45.269 [35m[http-nio-8080-exec-1][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:04:45.269 [35m[http-nio-8080-exec-1][0;39m -----------------------------------------------
+2024-04-27 15:04:45.269 [35m[http-nio-8080-exec-1][0;39m 
+
+2024-04-27 15:04:45.278 [35m[http-nio-8080-exec-3][0;39m -----------------------------------------------
+2024-04-27 15:04:45.278 [35m[http-nio-8080-exec-2][0;39m -----------------------------------------------
+2024-04-27 15:04:45.278 [35m[http-nio-8080-exec-3][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:04:45.278 [35m[http-nio-8080-exec-2][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:04:45.278 [35m[http-nio-8080-exec-3][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-27 15:04:45.278 [35m[http-nio-8080-exec-2][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-27 15:04:45.279 [35m[http-nio-8080-exec-3][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-27 15:04:45.279 [35m[http-nio-8080-exec-2][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-27 15:04:45.279 [35m[http-nio-8080-exec-3][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:04:45.279 [35m[http-nio-8080-exec-2][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:04:45.280 [35m[http-nio-8080-exec-3][0;39m -----------------------------------------------
+2024-04-27 15:04:45.280 [35m[http-nio-8080-exec-2][0;39m -----------------------------------------------
+2024-04-27 15:04:45.280 [35m[http-nio-8080-exec-3][0;39m 
+
+2024-04-27 15:04:45.280 [35m[http-nio-8080-exec-2][0;39m 
+
+2024-04-27 15:04:45.298 [35m[http-nio-8080-exec-4][0;39m -----------------------------------------------
+2024-04-27 15:04:45.298 [35m[http-nio-8080-exec-4][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:04:45.298 [35m[http-nio-8080-exec-4][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-27 15:04:45.300 [35m[http-nio-8080-exec-4][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-27 15:04:45.300 [35m[http-nio-8080-exec-4][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:04:45.300 [35m[http-nio-8080-exec-4][0;39m -----------------------------------------------
+2024-04-27 15:04:45.301 [35m[http-nio-8080-exec-4][0;39m 
+
+2024-04-27 15:15:42.305 [35m[SpringContextShutdownHook][0;39m LogFilter destroy
+2024-04-27 15:15:42.341 [35m[SpringContextShutdownHook][0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2024-04-27 15:15:46.596 [35m[main][0;39m Starting ItemServiceApplication using Java 15.0.10 on cheolhyeon-ui-MacBookAir.local with PID 27689 (/Users/cheolhyeon/Desktop/Login-Start/build/classes/java/main started by cheolhyeon in /Users/cheolhyeon/Desktop/Login-Start)
+2024-04-27 15:15:46.599 [35m[main][0;39m No active profile set, falling back to default profiles: default
+2024-04-27 15:15:47.889 [35m[main][0;39m Tomcat initialized with port(s): 8080 (http)
+2024-04-27 15:15:47.903 [35m[main][0;39m Starting service [Tomcat]
+2024-04-27 15:15:47.904 [35m[main][0;39m Starting Servlet engine: [Apache Tomcat/9.0.44]
+2024-04-27 15:15:48.012 [35m[main][0;39m Initializing Spring embedded WebApplicationContext
+2024-04-27 15:15:48.013 [35m[main][0;39m Root WebApplicationContext: initialization completed in 1349 ms
+2024-04-27 15:15:48.087 [35m[main][0;39m LogFilter init
+2024-04-27 15:15:48.098 [35m[main][0;39m save : member = Member(id=1, loginId=memberA, name=memberA, password=memberA)
+2024-04-27 15:15:48.384 [35m[main][0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-04-27 15:15:48.810 [35m[main][0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-27 15:15:48.827 [35m[main][0;39m Started ItemServiceApplication in 2.704 seconds (JVM running for 4.25)
+2024-04-27 15:15:55.727 [35m[http-nio-8080-exec-1][0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-27 15:15:55.728 [35m[http-nio-8080-exec-1][0;39m Initializing Servlet 'dispatcherServlet'
+2024-04-27 15:15:55.730 [35m[http-nio-8080-exec-1][0;39m Completed initialization in 2 ms
+2024-04-27 15:15:55.734 [35m[http-nio-8080-exec-1][0;39m -----------------------------------------------
+2024-04-27 15:15:55.734 [35m[http-nio-8080-exec-1][0;39m REQUEST: [/login], USERID [null]
+2024-04-27 15:15:55.734 [35m[http-nio-8080-exec-1][0;39m 인증 체크 필터 시작: /login
+2024-04-27 15:15:55.939 [35m[http-nio-8080-exec-1][0;39m 인증 체크 종료: /login
+2024-04-27 15:15:55.939 [35m[http-nio-8080-exec-1][0;39m RESPONSE: [/login], USERID [null]
+2024-04-27 15:15:55.939 [35m[http-nio-8080-exec-1][0;39m -----------------------------------------------
+2024-04-27 15:15:55.939 [35m[http-nio-8080-exec-1][0;39m 
+
+2024-04-27 15:15:55.985 [35m[http-nio-8080-exec-2][0;39m -----------------------------------------------
+2024-04-27 15:15:55.985 [35m[http-nio-8080-exec-2][0;39m REQUEST: [/css/bootstrap.min.css], USERID [null]
+2024-04-27 15:15:55.985 [35m[http-nio-8080-exec-2][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css
+2024-04-27 15:15:56.059 [35m[http-nio-8080-exec-2][0;39m 인증 체크 종료: /css/bootstrap.min.css
+2024-04-27 15:15:56.059 [35m[http-nio-8080-exec-2][0;39m RESPONSE: [/css/bootstrap.min.css], USERID [null]
+2024-04-27 15:15:56.060 [35m[http-nio-8080-exec-2][0;39m -----------------------------------------------
+2024-04-27 15:15:56.060 [35m[http-nio-8080-exec-2][0;39m 
+
+2024-04-27 15:15:56.146 [35m[http-nio-8080-exec-3][0;39m -----------------------------------------------
+2024-04-27 15:15:56.146 [35m[http-nio-8080-exec-3][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-27 15:15:56.146 [35m[http-nio-8080-exec-3][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-27 15:15:56.148 [35m[http-nio-8080-exec-3][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-27 15:15:56.148 [35m[http-nio-8080-exec-3][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-27 15:15:56.148 [35m[http-nio-8080-exec-3][0;39m -----------------------------------------------
+2024-04-27 15:15:56.148 [35m[http-nio-8080-exec-3][0;39m 
+
+2024-04-27 15:15:59.870 [35m[http-nio-8080-exec-5][0;39m -----------------------------------------------
+2024-04-27 15:15:59.871 [35m[http-nio-8080-exec-5][0;39m REQUEST: [/], USERID [null]
+2024-04-27 15:15:59.871 [35m[http-nio-8080-exec-5][0;39m 인증 체크 필터 시작: /
+2024-04-27 15:15:59.879 [35m[http-nio-8080-exec-5][0;39m 인증 체크 종료: /
+2024-04-27 15:15:59.879 [35m[http-nio-8080-exec-5][0;39m RESPONSE: [/], USERID [null]
+2024-04-27 15:15:59.879 [35m[http-nio-8080-exec-5][0;39m -----------------------------------------------
+2024-04-27 15:15:59.879 [35m[http-nio-8080-exec-5][0;39m 
+
+2024-04-27 15:15:59.902 [35m[http-nio-8080-exec-6][0;39m -----------------------------------------------
+2024-04-27 15:15:59.903 [35m[http-nio-8080-exec-6][0;39m REQUEST: [/css/bootstrap.min.css], USERID [null]
+2024-04-27 15:15:59.903 [35m[http-nio-8080-exec-6][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css
+2024-04-27 15:15:59.906 [35m[http-nio-8080-exec-6][0;39m 인증 체크 종료: /css/bootstrap.min.css
+2024-04-27 15:15:59.907 [35m[http-nio-8080-exec-6][0;39m RESPONSE: [/css/bootstrap.min.css], USERID [null]
+2024-04-27 15:15:59.907 [35m[http-nio-8080-exec-6][0;39m -----------------------------------------------
+2024-04-27 15:15:59.907 [35m[http-nio-8080-exec-6][0;39m 
+
+2024-04-27 15:15:59.909 [35m[http-nio-8080-exec-7][0;39m -----------------------------------------------
+2024-04-27 15:15:59.909 [35m[http-nio-8080-exec-7][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-27 15:15:59.910 [35m[http-nio-8080-exec-7][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-27 15:15:59.912 [35m[http-nio-8080-exec-7][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-27 15:15:59.912 [35m[http-nio-8080-exec-7][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-27 15:15:59.912 [35m[http-nio-8080-exec-7][0;39m -----------------------------------------------
+2024-04-27 15:15:59.912 [35m[http-nio-8080-exec-7][0;39m 
+
+2024-04-27 15:15:59.955 [35m[http-nio-8080-exec-8][0;39m -----------------------------------------------
+2024-04-27 15:15:59.955 [35m[http-nio-8080-exec-8][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-27 15:15:59.955 [35m[http-nio-8080-exec-8][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-27 15:15:59.958 [35m[http-nio-8080-exec-8][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-27 15:15:59.959 [35m[http-nio-8080-exec-8][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-27 15:15:59.959 [35m[http-nio-8080-exec-8][0;39m -----------------------------------------------
+2024-04-27 15:15:59.959 [35m[http-nio-8080-exec-8][0;39m 
+
+2024-04-27 15:16:04.797 [35m[http-nio-8080-exec-1][0;39m -----------------------------------------------
+2024-04-27 15:16:04.797 [35m[http-nio-8080-exec-1][0;39m REQUEST: [/items/add], USERID [null]
+2024-04-27 15:16:04.797 [35m[http-nio-8080-exec-1][0;39m 인증 체크 필터 시작: /items/add
+2024-04-27 15:16:04.797 [35m[http-nio-8080-exec-1][0;39m 인증 체크 로직 시작: /items/add
+2024-04-27 15:16:04.797 [35m[http-nio-8080-exec-1][0;39m 미인증 사용자 체크: /items/add
+2024-04-27 15:16:04.798 [35m[http-nio-8080-exec-1][0;39m 인증 체크 종료: /items/add
+2024-04-27 15:16:04.798 [35m[http-nio-8080-exec-1][0;39m RESPONSE: [/items/add], USERID [null]
+2024-04-27 15:16:04.798 [35m[http-nio-8080-exec-1][0;39m -----------------------------------------------
+2024-04-27 15:16:04.798 [35m[http-nio-8080-exec-1][0;39m 
+
+2024-04-27 15:16:04.812 [35m[http-nio-8080-exec-2][0;39m -----------------------------------------------
+2024-04-27 15:16:04.812 [35m[http-nio-8080-exec-2][0;39m REQUEST: [/login], USERID [null]
+2024-04-27 15:16:04.812 [35m[http-nio-8080-exec-2][0;39m 인증 체크 필터 시작: /login
+2024-04-27 15:16:04.823 [35m[http-nio-8080-exec-2][0;39m 인증 체크 종료: /login
+2024-04-27 15:16:04.823 [35m[http-nio-8080-exec-2][0;39m RESPONSE: [/login], USERID [null]
+2024-04-27 15:16:04.823 [35m[http-nio-8080-exec-2][0;39m -----------------------------------------------
+2024-04-27 15:16:04.823 [35m[http-nio-8080-exec-2][0;39m 
+
+2024-04-27 15:16:04.844 [35m[http-nio-8080-exec-3][0;39m -----------------------------------------------
+2024-04-27 15:16:04.845 [35m[http-nio-8080-exec-3][0;39m REQUEST: [/css/bootstrap.min.css], USERID [null]
+2024-04-27 15:16:04.845 [35m[http-nio-8080-exec-3][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css
+2024-04-27 15:16:04.876 [35m[http-nio-8080-exec-4][0;39m -----------------------------------------------
+2024-04-27 15:16:04.877 [35m[http-nio-8080-exec-4][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-27 15:16:04.877 [35m[http-nio-8080-exec-4][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-27 15:16:04.878 [35m[http-nio-8080-exec-3][0;39m 인증 체크 종료: /css/bootstrap.min.css
+2024-04-27 15:16:04.878 [35m[http-nio-8080-exec-3][0;39m RESPONSE: [/css/bootstrap.min.css], USERID [null]
+2024-04-27 15:16:04.878 [35m[http-nio-8080-exec-3][0;39m -----------------------------------------------
+2024-04-27 15:16:04.878 [35m[http-nio-8080-exec-3][0;39m 
+
+2024-04-27 15:16:04.882 [35m[http-nio-8080-exec-4][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-27 15:16:04.882 [35m[http-nio-8080-exec-4][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-27 15:16:04.882 [35m[http-nio-8080-exec-4][0;39m -----------------------------------------------
+2024-04-27 15:16:04.882 [35m[http-nio-8080-exec-4][0;39m 
+
+2024-04-27 15:16:05.161 [35m[http-nio-8080-exec-5][0;39m -----------------------------------------------
+2024-04-27 15:16:05.161 [35m[http-nio-8080-exec-5][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-27 15:16:05.161 [35m[http-nio-8080-exec-5][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-27 15:16:05.162 [35m[http-nio-8080-exec-5][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-27 15:16:05.162 [35m[http-nio-8080-exec-5][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-27 15:16:05.162 [35m[http-nio-8080-exec-5][0;39m -----------------------------------------------
+2024-04-27 15:16:05.162 [35m[http-nio-8080-exec-5][0;39m 
+
+2024-04-27 15:16:29.738 [35m[http-nio-8080-exec-8][0;39m -----------------------------------------------
+2024-04-27 15:16:29.739 [35m[http-nio-8080-exec-8][0;39m REQUEST: [/login], USERID [null]
+2024-04-27 15:16:29.739 [35m[http-nio-8080-exec-8][0;39m 인증 체크 필터 시작: /login
+2024-04-27 15:16:29.807 [35m[http-nio-8080-exec-8][0;39m Login Success
+2024-04-27 15:16:29.809 [35m[http-nio-8080-exec-8][0;39m 인증 체크 종료: /login
+2024-04-27 15:16:29.809 [35m[http-nio-8080-exec-8][0;39m RESPONSE: [/login], USERID [null]
+2024-04-27 15:16:29.809 [35m[http-nio-8080-exec-8][0;39m -----------------------------------------------
+2024-04-27 15:16:29.809 [35m[http-nio-8080-exec-8][0;39m 
+
+2024-04-27 15:16:29.812 [35m[http-nio-8080-exec-9][0;39m -----------------------------------------------
+2024-04-27 15:16:29.812 [35m[http-nio-8080-exec-9][0;39m REQUEST: [/], USERID [memberA]
+2024-04-27 15:16:29.812 [35m[http-nio-8080-exec-9][0;39m 인증 체크 필터 시작: /
+2024-04-27 15:16:29.820 [35m[http-nio-8080-exec-9][0;39m 인증 체크 종료: /
+2024-04-27 15:16:29.821 [35m[http-nio-8080-exec-9][0;39m RESPONSE: [/], USERID [memberA]
+2024-04-27 15:16:29.821 [35m[http-nio-8080-exec-9][0;39m -----------------------------------------------
+2024-04-27 15:16:29.821 [35m[http-nio-8080-exec-9][0;39m 
+
+2024-04-27 15:16:29.842 [35m[http-nio-8080-exec-10][0;39m -----------------------------------------------
+2024-04-27 15:16:29.842 [35m[http-nio-8080-exec-10][0;39m REQUEST: [/css/bootstrap.min.css], USERID [memberA]
+2024-04-27 15:16:29.842 [35m[http-nio-8080-exec-10][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css
+2024-04-27 15:16:29.846 [35m[http-nio-8080-exec-10][0;39m 인증 체크 종료: /css/bootstrap.min.css
+2024-04-27 15:16:29.847 [35m[http-nio-8080-exec-10][0;39m RESPONSE: [/css/bootstrap.min.css], USERID [memberA]
+2024-04-27 15:16:29.847 [35m[http-nio-8080-exec-10][0;39m -----------------------------------------------
+2024-04-27 15:16:29.847 [35m[http-nio-8080-exec-10][0;39m 
+
+2024-04-27 15:16:29.849 [35m[http-nio-8080-exec-1][0;39m -----------------------------------------------
+2024-04-27 15:16:29.850 [35m[http-nio-8080-exec-1][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:16:29.850 [35m[http-nio-8080-exec-1][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-27 15:16:29.851 [35m[http-nio-8080-exec-1][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-27 15:16:29.852 [35m[http-nio-8080-exec-1][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:16:29.852 [35m[http-nio-8080-exec-1][0;39m -----------------------------------------------
+2024-04-27 15:16:29.852 [35m[http-nio-8080-exec-1][0;39m 
+
+2024-04-27 15:16:29.900 [35m[http-nio-8080-exec-2][0;39m -----------------------------------------------
+2024-04-27 15:16:29.900 [35m[http-nio-8080-exec-2][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:16:29.900 [35m[http-nio-8080-exec-2][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-27 15:16:29.902 [35m[http-nio-8080-exec-2][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-27 15:16:29.902 [35m[http-nio-8080-exec-2][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:16:29.902 [35m[http-nio-8080-exec-2][0;39m -----------------------------------------------
+2024-04-27 15:16:29.902 [35m[http-nio-8080-exec-2][0;39m 
+
+2024-04-27 15:17:40.844 [35m[http-nio-8080-exec-4][0;39m -----------------------------------------------
+2024-04-27 15:17:40.846 [35m[http-nio-8080-exec-4][0;39m REQUEST: [/logout], USERID [null]
+2024-04-27 15:17:40.846 [35m[http-nio-8080-exec-4][0;39m 인증 체크 필터 시작: /logout
+2024-04-27 15:17:40.860 [35m[http-nio-8080-exec-4][0;39m 인증 체크 종료: /logout
+2024-04-27 15:17:40.860 [35m[http-nio-8080-exec-4][0;39m RESPONSE: [/logout], USERID [null]
+2024-04-27 15:17:40.860 [35m[http-nio-8080-exec-4][0;39m -----------------------------------------------
+2024-04-27 15:17:40.860 [35m[http-nio-8080-exec-4][0;39m 
+
+2024-04-27 15:17:40.869 [35m[http-nio-8080-exec-5][0;39m -----------------------------------------------
+2024-04-27 15:17:40.869 [35m[http-nio-8080-exec-5][0;39m REQUEST: [/], USERID [null]
+2024-04-27 15:17:40.869 [35m[http-nio-8080-exec-5][0;39m 인증 체크 필터 시작: /
+2024-04-27 15:17:40.872 [35m[http-nio-8080-exec-5][0;39m 인증 체크 종료: /
+2024-04-27 15:17:40.872 [35m[http-nio-8080-exec-5][0;39m RESPONSE: [/], USERID [null]
+2024-04-27 15:17:40.873 [35m[http-nio-8080-exec-5][0;39m -----------------------------------------------
+2024-04-27 15:17:40.873 [35m[http-nio-8080-exec-5][0;39m 
+
+2024-04-27 15:17:40.892 [35m[http-nio-8080-exec-6][0;39m -----------------------------------------------
+2024-04-27 15:17:40.895 [35m[http-nio-8080-exec-6][0;39m REQUEST: [/css/bootstrap.min.css], USERID [null]
+2024-04-27 15:17:40.896 [35m[http-nio-8080-exec-6][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css
+2024-04-27 15:17:40.933 [35m[http-nio-8080-exec-6][0;39m 인증 체크 종료: /css/bootstrap.min.css
+2024-04-27 15:17:40.934 [35m[http-nio-8080-exec-6][0;39m RESPONSE: [/css/bootstrap.min.css], USERID [null]
+2024-04-27 15:17:40.934 [35m[http-nio-8080-exec-6][0;39m -----------------------------------------------
+2024-04-27 15:17:40.934 [35m[http-nio-8080-exec-6][0;39m 
+
+2024-04-27 15:17:41.069 [35m[http-nio-8080-exec-7][0;39m -----------------------------------------------
+2024-04-27 15:17:41.069 [35m[http-nio-8080-exec-7][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-27 15:17:41.069 [35m[http-nio-8080-exec-7][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-27 15:17:41.081 [35m[http-nio-8080-exec-7][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-27 15:17:41.081 [35m[http-nio-8080-exec-7][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-27 15:17:41.081 [35m[http-nio-8080-exec-7][0;39m -----------------------------------------------
+2024-04-27 15:17:41.082 [35m[http-nio-8080-exec-7][0;39m 
+
+2024-04-27 15:17:41.623 [35m[http-nio-8080-exec-9][0;39m -----------------------------------------------
+2024-04-27 15:17:41.623 [35m[http-nio-8080-exec-9][0;39m REQUEST: [/], USERID [memberA]
+2024-04-27 15:17:41.624 [35m[http-nio-8080-exec-9][0;39m 인증 체크 필터 시작: /
+2024-04-27 15:17:41.627 [35m[http-nio-8080-exec-9][0;39m 인증 체크 종료: /
+2024-04-27 15:17:41.627 [35m[http-nio-8080-exec-9][0;39m RESPONSE: [/], USERID [memberA]
+2024-04-27 15:17:41.627 [35m[http-nio-8080-exec-9][0;39m -----------------------------------------------
+2024-04-27 15:17:41.627 [35m[http-nio-8080-exec-9][0;39m 
+
+2024-04-27 15:17:41.644 [35m[http-nio-8080-exec-10][0;39m -----------------------------------------------
+2024-04-27 15:17:41.644 [35m[http-nio-8080-exec-10][0;39m REQUEST: [/css/bootstrap.min.css], USERID [memberA]
+2024-04-27 15:17:41.645 [35m[http-nio-8080-exec-10][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css
+2024-04-27 15:17:41.647 [35m[http-nio-8080-exec-10][0;39m 인증 체크 종료: /css/bootstrap.min.css
+2024-04-27 15:17:41.648 [35m[http-nio-8080-exec-10][0;39m RESPONSE: [/css/bootstrap.min.css], USERID [memberA]
+2024-04-27 15:17:41.648 [35m[http-nio-8080-exec-10][0;39m -----------------------------------------------
+2024-04-27 15:17:41.648 [35m[http-nio-8080-exec-10][0;39m 
+
+2024-04-27 15:17:41.697 [35m[http-nio-8080-exec-1][0;39m -----------------------------------------------
+2024-04-27 15:17:41.697 [35m[http-nio-8080-exec-1][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:17:41.697 [35m[http-nio-8080-exec-1][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-27 15:17:41.698 [35m[http-nio-8080-exec-1][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-27 15:17:41.698 [35m[http-nio-8080-exec-1][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:17:41.698 [35m[http-nio-8080-exec-1][0;39m -----------------------------------------------
+2024-04-27 15:17:41.698 [35m[http-nio-8080-exec-1][0;39m 
+
+2024-04-27 15:17:47.007 [35m[http-nio-8080-exec-4][0;39m -----------------------------------------------
+2024-04-27 15:17:47.007 [35m[http-nio-8080-exec-4][0;39m REQUEST: [/items], USERID [null]
+2024-04-27 15:17:47.007 [35m[http-nio-8080-exec-4][0;39m 인증 체크 필터 시작: /items
+2024-04-27 15:17:47.007 [35m[http-nio-8080-exec-4][0;39m 인증 체크 로직 시작: /items
+2024-04-27 15:17:47.007 [35m[http-nio-8080-exec-4][0;39m 미인증 사용자 체크: /items
+2024-04-27 15:17:47.007 [35m[http-nio-8080-exec-4][0;39m 인증 체크 종료: /items
+2024-04-27 15:17:47.007 [35m[http-nio-8080-exec-4][0;39m RESPONSE: [/items], USERID [null]
+2024-04-27 15:17:47.007 [35m[http-nio-8080-exec-4][0;39m -----------------------------------------------
+2024-04-27 15:17:47.007 [35m[http-nio-8080-exec-4][0;39m 
+
+2024-04-27 15:17:47.010 [35m[http-nio-8080-exec-5][0;39m -----------------------------------------------
+2024-04-27 15:17:47.010 [35m[http-nio-8080-exec-5][0;39m REQUEST: [/login], USERID [null]
+2024-04-27 15:17:47.010 [35m[http-nio-8080-exec-5][0;39m 인증 체크 필터 시작: /login
+2024-04-27 15:17:47.015 [35m[http-nio-8080-exec-5][0;39m 인증 체크 종료: /login
+2024-04-27 15:17:47.015 [35m[http-nio-8080-exec-5][0;39m RESPONSE: [/login], USERID [null]
+2024-04-27 15:17:47.016 [35m[http-nio-8080-exec-5][0;39m -----------------------------------------------
+2024-04-27 15:17:47.016 [35m[http-nio-8080-exec-5][0;39m 
+
+2024-04-27 15:17:47.038 [35m[http-nio-8080-exec-6][0;39m -----------------------------------------------
+2024-04-27 15:17:47.039 [35m[http-nio-8080-exec-6][0;39m REQUEST: [/css/bootstrap.min.css], USERID [null]
+2024-04-27 15:17:47.039 [35m[http-nio-8080-exec-6][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css
+2024-04-27 15:17:47.042 [35m[http-nio-8080-exec-6][0;39m 인증 체크 종료: /css/bootstrap.min.css
+2024-04-27 15:17:47.042 [35m[http-nio-8080-exec-6][0;39m RESPONSE: [/css/bootstrap.min.css], USERID [null]
+2024-04-27 15:17:47.042 [35m[http-nio-8080-exec-6][0;39m -----------------------------------------------
+2024-04-27 15:17:47.042 [35m[http-nio-8080-exec-6][0;39m 
+
+2024-04-27 15:17:47.045 [35m[http-nio-8080-exec-7][0;39m -----------------------------------------------
+2024-04-27 15:17:47.045 [35m[http-nio-8080-exec-7][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-27 15:17:47.045 [35m[http-nio-8080-exec-7][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-27 15:17:47.046 [35m[http-nio-8080-exec-7][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-27 15:17:47.046 [35m[http-nio-8080-exec-7][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-27 15:17:47.046 [35m[http-nio-8080-exec-7][0;39m -----------------------------------------------
+2024-04-27 15:17:47.046 [35m[http-nio-8080-exec-7][0;39m 
+
+2024-04-27 15:17:47.093 [35m[http-nio-8080-exec-8][0;39m -----------------------------------------------
+2024-04-27 15:17:47.093 [35m[http-nio-8080-exec-8][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-27 15:17:47.093 [35m[http-nio-8080-exec-8][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-27 15:17:47.094 [35m[http-nio-8080-exec-8][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-27 15:17:47.095 [35m[http-nio-8080-exec-8][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [null]
+2024-04-27 15:17:47.095 [35m[http-nio-8080-exec-8][0;39m -----------------------------------------------
+2024-04-27 15:17:47.095 [35m[http-nio-8080-exec-8][0;39m 
+
+2024-04-27 15:17:50.882 [35m[http-nio-8080-exec-9][0;39m -----------------------------------------------
+2024-04-27 15:17:50.882 [35m[http-nio-8080-exec-9][0;39m REQUEST: [/login], USERID [memberA]
+2024-04-27 15:17:50.882 [35m[http-nio-8080-exec-9][0;39m 인증 체크 필터 시작: /login
+2024-04-27 15:17:50.884 [35m[http-nio-8080-exec-9][0;39m Login Success
+2024-04-27 15:17:50.885 [35m[http-nio-8080-exec-9][0;39m 인증 체크 종료: /login
+2024-04-27 15:17:50.886 [35m[http-nio-8080-exec-9][0;39m RESPONSE: [/login], USERID [memberA]
+2024-04-27 15:17:50.886 [35m[http-nio-8080-exec-9][0;39m -----------------------------------------------
+2024-04-27 15:17:50.886 [35m[http-nio-8080-exec-9][0;39m 
+
+2024-04-27 15:17:50.890 [35m[http-nio-8080-exec-10][0;39m -----------------------------------------------
+2024-04-27 15:17:50.890 [35m[http-nio-8080-exec-10][0;39m REQUEST: [/], USERID [memberA]
+2024-04-27 15:17:50.890 [35m[http-nio-8080-exec-10][0;39m 인증 체크 필터 시작: /
+2024-04-27 15:17:50.893 [35m[http-nio-8080-exec-10][0;39m 인증 체크 종료: /
+2024-04-27 15:17:50.893 [35m[http-nio-8080-exec-10][0;39m RESPONSE: [/], USERID [memberA]
+2024-04-27 15:17:50.893 [35m[http-nio-8080-exec-10][0;39m -----------------------------------------------
+2024-04-27 15:17:50.893 [35m[http-nio-8080-exec-10][0;39m 
+
+2024-04-27 15:17:50.924 [35m[http-nio-8080-exec-1][0;39m -----------------------------------------------
+2024-04-27 15:17:50.924 [35m[http-nio-8080-exec-1][0;39m REQUEST: [/css/bootstrap.min.css], USERID [memberA]
+2024-04-27 15:17:50.924 [35m[http-nio-8080-exec-1][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css
+2024-04-27 15:17:50.927 [35m[http-nio-8080-exec-1][0;39m 인증 체크 종료: /css/bootstrap.min.css
+2024-04-27 15:17:50.927 [35m[http-nio-8080-exec-1][0;39m RESPONSE: [/css/bootstrap.min.css], USERID [memberA]
+2024-04-27 15:17:50.927 [35m[http-nio-8080-exec-1][0;39m -----------------------------------------------
+2024-04-27 15:17:50.927 [35m[http-nio-8080-exec-1][0;39m 
+
+2024-04-27 15:17:50.930 [35m[http-nio-8080-exec-2][0;39m -----------------------------------------------
+2024-04-27 15:17:50.930 [35m[http-nio-8080-exec-2][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:17:50.930 [35m[http-nio-8080-exec-2][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-27 15:17:50.931 [35m[http-nio-8080-exec-2][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-27 15:17:50.931 [35m[http-nio-8080-exec-2][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:17:50.932 [35m[http-nio-8080-exec-2][0;39m -----------------------------------------------
+2024-04-27 15:17:50.932 [35m[http-nio-8080-exec-2][0;39m 
+
+2024-04-27 15:17:50.995 [35m[http-nio-8080-exec-3][0;39m -----------------------------------------------
+2024-04-27 15:17:50.995 [35m[http-nio-8080-exec-3][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:17:50.995 [35m[http-nio-8080-exec-3][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-27 15:17:50.996 [35m[http-nio-8080-exec-3][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-27 15:17:50.996 [35m[http-nio-8080-exec-3][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:17:50.996 [35m[http-nio-8080-exec-3][0;39m -----------------------------------------------
+2024-04-27 15:17:50.996 [35m[http-nio-8080-exec-3][0;39m 
+
+2024-04-27 15:18:08.076 [35m[http-nio-8080-exec-6][0;39m -----------------------------------------------
+2024-04-27 15:18:08.078 [35m[http-nio-8080-exec-6][0;39m REQUEST: [/items], USERID [memberA]
+2024-04-27 15:18:08.078 [35m[http-nio-8080-exec-6][0;39m 인증 체크 필터 시작: /items
+2024-04-27 15:18:08.078 [35m[http-nio-8080-exec-6][0;39m 인증 체크 로직 시작: /items
+2024-04-27 15:18:08.118 [35m[http-nio-8080-exec-6][0;39m 인증 체크 종료: /items
+2024-04-27 15:18:08.118 [35m[http-nio-8080-exec-6][0;39m RESPONSE: [/items], USERID [memberA]
+2024-04-27 15:18:08.118 [35m[http-nio-8080-exec-6][0;39m -----------------------------------------------
+2024-04-27 15:18:08.118 [35m[http-nio-8080-exec-6][0;39m 
+
+2024-04-27 15:18:08.157 [35m[http-nio-8080-exec-7][0;39m -----------------------------------------------
+2024-04-27 15:18:08.157 [35m[http-nio-8080-exec-7][0;39m REQUEST: [/css/bootstrap.min.css], USERID [memberA]
+2024-04-27 15:18:08.157 [35m[http-nio-8080-exec-7][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css
+2024-04-27 15:18:08.161 [35m[http-nio-8080-exec-7][0;39m 인증 체크 종료: /css/bootstrap.min.css
+2024-04-27 15:18:08.161 [35m[http-nio-8080-exec-7][0;39m RESPONSE: [/css/bootstrap.min.css], USERID [memberA]
+2024-04-27 15:18:08.161 [35m[http-nio-8080-exec-7][0;39m -----------------------------------------------
+2024-04-27 15:18:08.161 [35m[http-nio-8080-exec-7][0;39m 
+
+2024-04-27 15:18:08.173 [35m[http-nio-8080-exec-8][0;39m -----------------------------------------------
+2024-04-27 15:18:08.173 [35m[http-nio-8080-exec-8][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:18:08.173 [35m[http-nio-8080-exec-8][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-27 15:18:08.176 [35m[http-nio-8080-exec-8][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-27 15:18:08.177 [35m[http-nio-8080-exec-8][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:18:08.177 [35m[http-nio-8080-exec-8][0;39m -----------------------------------------------
+2024-04-27 15:18:08.177 [35m[http-nio-8080-exec-8][0;39m 
+
+2024-04-27 15:18:08.243 [35m[http-nio-8080-exec-9][0;39m -----------------------------------------------
+2024-04-27 15:18:08.243 [35m[http-nio-8080-exec-9][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:18:08.243 [35m[http-nio-8080-exec-9][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-27 15:18:08.245 [35m[http-nio-8080-exec-9][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-27 15:18:08.246 [35m[http-nio-8080-exec-9][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:18:08.246 [35m[http-nio-8080-exec-9][0;39m -----------------------------------------------
+2024-04-27 15:18:08.246 [35m[http-nio-8080-exec-9][0;39m 
+
+2024-04-27 15:18:09.193 [35m[http-nio-8080-exec-10][0;39m -----------------------------------------------
+2024-04-27 15:18:09.194 [35m[http-nio-8080-exec-10][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:18:09.194 [35m[http-nio-8080-exec-10][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-27 15:18:09.195 [35m[http-nio-8080-exec-10][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-27 15:18:09.195 [35m[http-nio-8080-exec-10][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:18:09.195 [35m[http-nio-8080-exec-10][0;39m -----------------------------------------------
+2024-04-27 15:18:09.196 [35m[http-nio-8080-exec-10][0;39m 
+
+2024-04-27 15:18:09.204 [35m[http-nio-8080-exec-1][0;39m -----------------------------------------------
+2024-04-27 15:18:09.204 [35m[http-nio-8080-exec-2][0;39m -----------------------------------------------
+2024-04-27 15:18:09.204 [35m[http-nio-8080-exec-1][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:18:09.204 [35m[http-nio-8080-exec-2][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:18:09.204 [35m[http-nio-8080-exec-1][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-27 15:18:09.204 [35m[http-nio-8080-exec-2][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-27 15:18:09.206 [35m[http-nio-8080-exec-2][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-27 15:18:09.206 [35m[http-nio-8080-exec-2][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:18:09.206 [35m[http-nio-8080-exec-2][0;39m -----------------------------------------------
+2024-04-27 15:18:09.206 [35m[http-nio-8080-exec-2][0;39m 
+
+2024-04-27 15:18:09.206 [35m[http-nio-8080-exec-1][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-27 15:18:09.206 [35m[http-nio-8080-exec-1][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:18:09.206 [35m[http-nio-8080-exec-1][0;39m -----------------------------------------------
+2024-04-27 15:18:09.207 [35m[http-nio-8080-exec-1][0;39m 
+
+2024-04-27 15:18:09.224 [35m[http-nio-8080-exec-3][0;39m -----------------------------------------------
+2024-04-27 15:18:09.224 [35m[http-nio-8080-exec-3][0;39m REQUEST: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:18:09.224 [35m[http-nio-8080-exec-3][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-27 15:18:09.224 [35m[http-nio-8080-exec-3][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-27 15:18:09.224 [35m[http-nio-8080-exec-3][0;39m RESPONSE: [/css/bootstrap.min.css.map], USERID [memberA]
+2024-04-27 15:18:09.224 [35m[http-nio-8080-exec-3][0;39m -----------------------------------------------
+2024-04-27 15:18:09.224 [35m[http-nio-8080-exec-3][0;39m 
+
+2024-04-27 15:20:13.469 [35m[SpringContextShutdownHook][0;39m LogFilter destroy
+2024-04-27 15:20:13.516 [35m[SpringContextShutdownHook][0;39m Shutting down ExecutorService 'applicationTaskExecutor'
