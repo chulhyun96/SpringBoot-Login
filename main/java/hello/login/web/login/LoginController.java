@@ -52,16 +52,18 @@ public class LoginController {
     public String loginV2(@Validated LoginForm form, BindingResult bindingResult,
                           @RequestParam(defaultValue = "/") String redirectURL,
                           HttpServletRequest request) {
+        //에러가 있을 경우 필드 에러
         if (bindingResult.hasErrors()) {
             log.info("LogIn form error: {}", bindingResult);
+            return "login/loginForm";
         }
+        // 글로벌 에러
         Member member = loginService.login(form.getLoginId(), form.getPassword());
         if (member == null) {
             bindingResult.reject("loginFail", "Invalid loginId or password");
             return "login/loginForm";
         }
-        //로그인 성공 처리
-        //세션이 있으면 있는 세션을 반환, 없으면 신규 세션을 생성
+        // 성공 로직
         HttpSession session = request.getSession(); // Default = true
         session.setAttribute(SessionConst.LOGIN_MEMBER, member);
         log.info("Login Success");

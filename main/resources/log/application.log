@@ -683,3 +683,90 @@
 2024-04-28 20:52:44.827 [35m[http-nio-8080-exec-3][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
 2024-04-28 20:52:44.833 [35m[http-nio-8080-exec-3][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
 2024-04-28 20:53:51.312 [35m[SpringContextShutdownHook][0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2024-04-28 21:19:20.053 [35m[main][0;39m Starting ItemServiceApplication using Java 15.0.10 on cheolhyeon-ui-MacBookAir.local with PID 34386 (/Users/cheolhyeon/Desktop/Login-Start/build/classes/java/main started by cheolhyeon in /Users/cheolhyeon/Desktop/Login-Start)
+2024-04-28 21:19:20.056 [35m[main][0;39m No active profile set, falling back to default profiles: default
+2024-04-28 21:19:20.853 [35m[main][0;39m Tomcat initialized with port(s): 8080 (http)
+2024-04-28 21:19:20.859 [35m[main][0;39m Starting service [Tomcat]
+2024-04-28 21:19:20.859 [35m[main][0;39m Starting Servlet engine: [Apache Tomcat/9.0.44]
+2024-04-28 21:19:20.897 [35m[main][0;39m Initializing Spring embedded WebApplicationContext
+2024-04-28 21:19:20.898 [35m[main][0;39m Root WebApplicationContext: initialization completed in 787 ms
+2024-04-28 21:19:20.935 [35m[main][0;39m save : member = Member(id=1, loginId=memberA, name=memberA, password=memberA)
+2024-04-28 21:19:21.004 [35m[main][0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-04-28 21:19:21.123 [35m[main][0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-28 21:19:21.131 [35m[main][0;39m Started ItemServiceApplication in 1.383 seconds (JVM running for 2.154)
+2024-04-28 21:19:26.636 [35m[http-nio-8080-exec-1][0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-28 21:19:26.637 [35m[http-nio-8080-exec-1][0;39m Initializing Servlet 'dispatcherServlet'
+2024-04-28 21:19:26.638 [35m[http-nio-8080-exec-1][0;39m Completed initialization in 1 ms
+2024-04-28 21:19:26.642 [35m[http-nio-8080-exec-1][0;39m 인증 체크 필터 시작: /login
+2024-04-28 21:19:26.650 [35m[http-nio-8080-exec-1][0;39m Interceptor Pre-handle 호출
+2024-04-28 21:19:26.650 [35m[http-nio-8080-exec-1][0;39m REQUEST : [/login] [null] [hello.login.web.login.LoginController#loginForm(Model)] 
+2024-04-28 21:19:26.667 [35m[http-nio-8080-exec-1][0;39m PostHandle: [ModelAndView [view="login/loginForm"; model={loginForm=LoginForm(loginId=null, password=null), org.springframework.validation.BindingResult.loginForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]]
+2024-04-28 21:19:26.882 [35m[http-nio-8080-exec-1][0;39m Interceptor afterCompletion 호출
+2024-04-28 21:19:26.882 [35m[http-nio-8080-exec-1][0;39m RESPONSE : [/login] [null] [hello.login.web.login.LoginController#loginForm(Model)] 
+2024-04-28 21:19:26.883 [35m[http-nio-8080-exec-1][0;39m 인증 체크 종료: /login
+2024-04-28 21:19:26.949 [35m[http-nio-8080-exec-2][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css
+2024-04-28 21:19:26.952 [35m[http-nio-8080-exec-3][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-28 21:19:26.957 [35m[http-nio-8080-exec-3][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-28 21:19:27.004 [35m[http-nio-8080-exec-2][0;39m 인증 체크 종료: /css/bootstrap.min.css
+2024-04-28 21:19:27.182 [35m[http-nio-8080-exec-4][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-28 21:19:27.185 [35m[http-nio-8080-exec-4][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-28 21:19:42.680 [35m[http-nio-8080-exec-5][0;39m 인증 체크 필터 시작: /login
+2024-04-28 21:19:42.683 [35m[http-nio-8080-exec-5][0;39m Interceptor Pre-handle 호출
+2024-04-28 21:19:42.683 [35m[http-nio-8080-exec-5][0;39m REQUEST : [/login] [null] [hello.login.web.login.LoginController#loginForm(Model)] 
+2024-04-28 21:19:42.685 [35m[http-nio-8080-exec-5][0;39m PostHandle: [ModelAndView [view="login/loginForm"; model={loginForm=LoginForm(loginId=null, password=null), org.springframework.validation.BindingResult.loginForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]]
+2024-04-28 21:19:42.693 [35m[http-nio-8080-exec-5][0;39m Interceptor afterCompletion 호출
+2024-04-28 21:19:42.693 [35m[http-nio-8080-exec-5][0;39m RESPONSE : [/login] [null] [hello.login.web.login.LoginController#loginForm(Model)] 
+2024-04-28 21:19:42.694 [35m[http-nio-8080-exec-5][0;39m 인증 체크 종료: /login
+2024-04-28 21:19:42.736 [35m[http-nio-8080-exec-6][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css
+2024-04-28 21:19:42.743 [35m[http-nio-8080-exec-6][0;39m 인증 체크 종료: /css/bootstrap.min.css
+2024-04-28 21:19:42.744 [35m[http-nio-8080-exec-7][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-28 21:19:42.769 [35m[http-nio-8080-exec-7][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-28 21:19:42.809 [35m[http-nio-8080-exec-8][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-28 21:19:42.811 [35m[http-nio-8080-exec-8][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-28 21:19:56.517 [35m[http-nio-8080-exec-1][0;39m 인증 체크 필터 시작: /login
+2024-04-28 21:19:56.527 [35m[http-nio-8080-exec-1][0;39m Interceptor Pre-handle 호출
+2024-04-28 21:19:56.527 [35m[http-nio-8080-exec-1][0;39m REQUEST : [/login] [null] [hello.login.web.login.LoginController#loginV2(LoginForm, BindingResult, String, HttpServletRequest)] 
+2024-04-28 21:19:56.603 [35m[http-nio-8080-exec-1][0;39m Login Success
+2024-04-28 21:19:56.604 [35m[http-nio-8080-exec-1][0;39m PostHandle: [ModelAndView [view="redirect:/items/add"; model={}]]
+2024-04-28 21:19:56.605 [35m[http-nio-8080-exec-1][0;39m Interceptor afterCompletion 호출
+2024-04-28 21:19:56.606 [35m[http-nio-8080-exec-1][0;39m RESPONSE : [/login] [null] [hello.login.web.login.LoginController#loginV2(LoginForm, BindingResult, String, HttpServletRequest)] 
+2024-04-28 21:19:56.606 [35m[http-nio-8080-exec-1][0;39m 인증 체크 종료: /login
+2024-04-28 21:19:56.611 [35m[http-nio-8080-exec-2][0;39m 인증 체크 필터 시작: /items/add
+2024-04-28 21:19:56.611 [35m[http-nio-8080-exec-2][0;39m 인증 체크 로직 시작: /items/add
+2024-04-28 21:19:56.611 [35m[http-nio-8080-exec-2][0;39m Interceptor Pre-handle 호출
+2024-04-28 21:19:56.612 [35m[http-nio-8080-exec-2][0;39m REQUEST : [/items/add] [memberA] [hello.login.web.item.ItemController#addForm(Model)] 
+2024-04-28 21:19:56.612 [35m[http-nio-8080-exec-2][0;39m PostHandle: [ModelAndView [view="items/addForm"; model={item=Item(id=null, itemName=null, price=null, quantity=null), org.springframework.validation.BindingResult.item=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]]
+2024-04-28 21:19:56.626 [35m[http-nio-8080-exec-2][0;39m Interceptor afterCompletion 호출
+2024-04-28 21:19:56.626 [35m[http-nio-8080-exec-2][0;39m RESPONSE : [/items/add] [memberA] [hello.login.web.item.ItemController#addForm(Model)] 
+2024-04-28 21:19:56.627 [35m[http-nio-8080-exec-2][0;39m 인증 체크 종료: /items/add
+2024-04-28 21:19:56.657 [35m[http-nio-8080-exec-4][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css
+2024-04-28 21:19:56.663 [35m[http-nio-8080-exec-4][0;39m 인증 체크 종료: /css/bootstrap.min.css
+2024-04-28 21:19:56.670 [35m[http-nio-8080-exec-3][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-28 21:19:56.671 [35m[http-nio-8080-exec-3][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-28 21:19:56.749 [35m[http-nio-8080-exec-5][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-28 21:19:56.766 [35m[http-nio-8080-exec-5][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-28 21:20:05.327 [35m[http-nio-8080-exec-6][0;39m 인증 체크 필터 시작: /items/add
+2024-04-28 21:20:05.328 [35m[http-nio-8080-exec-6][0;39m 인증 체크 로직 시작: /items/add
+2024-04-28 21:20:05.330 [35m[http-nio-8080-exec-6][0;39m Interceptor Pre-handle 호출
+2024-04-28 21:20:05.331 [35m[http-nio-8080-exec-6][0;39m REQUEST : [/items/add] [memberA] [hello.login.web.item.ItemController#addForm(Model)] 
+2024-04-28 21:20:05.332 [35m[http-nio-8080-exec-6][0;39m PostHandle: [ModelAndView [view="items/addForm"; model={item=Item(id=null, itemName=null, price=null, quantity=null), org.springframework.validation.BindingResult.item=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]]
+2024-04-28 21:20:05.342 [35m[http-nio-8080-exec-6][0;39m Interceptor afterCompletion 호출
+2024-04-28 21:20:05.342 [35m[http-nio-8080-exec-6][0;39m RESPONSE : [/items/add] [memberA] [hello.login.web.item.ItemController#addForm(Model)] 
+2024-04-28 21:20:05.342 [35m[http-nio-8080-exec-6][0;39m 인증 체크 종료: /items/add
+2024-04-28 21:20:05.380 [35m[http-nio-8080-exec-7][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css
+2024-04-28 21:20:05.390 [35m[http-nio-8080-exec-7][0;39m 인증 체크 종료: /css/bootstrap.min.css
+2024-04-28 21:20:05.459 [35m[http-nio-8080-exec-8][0;39m 인증 체크 필터 시작: /css/bootstrap.min.css.map
+2024-04-28 21:20:05.463 [35m[http-nio-8080-exec-8][0;39m 인증 체크 종료: /css/bootstrap.min.css.map
+2024-04-28 21:20:30.957 [35m[SpringContextShutdownHook][0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2024-04-28 21:33:23.794 [35m[main][0;39m Starting ItemServiceApplication using Java 15.0.10 on cheolhyeon-ui-MacBookAir.local with PID 34783 (/Users/cheolhyeon/Desktop/Login-Start/build/classes/java/main started by cheolhyeon in /Users/cheolhyeon/Desktop/Login-Start)
+2024-04-28 21:33:23.797 [35m[main][0;39m No active profile set, falling back to default profiles: default
+2024-04-28 21:33:24.456 [35m[main][0;39m Tomcat initialized with port(s): 8080 (http)
+2024-04-28 21:33:24.462 [35m[main][0;39m Starting service [Tomcat]
+2024-04-28 21:33:24.462 [35m[main][0;39m Starting Servlet engine: [Apache Tomcat/9.0.44]
+2024-04-28 21:33:24.500 [35m[main][0;39m Initializing Spring embedded WebApplicationContext
+2024-04-28 21:33:24.500 [35m[main][0;39m Root WebApplicationContext: initialization completed in 667 ms
+2024-04-28 21:33:24.526 [35m[main][0;39m save : member = Member(id=1, loginId=memberA, name=memberA, password=memberA)
+2024-04-28 21:33:24.600 [35m[main][0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-04-28 21:33:24.731 [35m[main][0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-28 21:33:24.739 [35m[main][0;39m Started ItemServiceApplication in 1.219 seconds (JVM running for 2.655)
+2024-04-28 21:35:53.731 [35m[SpringContextShutdownHook][0;39m Shutting down ExecutorService 'applicationTaskExecutor'
